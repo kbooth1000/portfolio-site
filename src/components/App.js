@@ -16,7 +16,7 @@ let Logo = () => {
 
 let Header = () => {
   return (
-    <header className="header -landing">
+    <header className="header landing">
 
       <ContentDispenser label="Contact" content={<ContactInfo />} />
      
