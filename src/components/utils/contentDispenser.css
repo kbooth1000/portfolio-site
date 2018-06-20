@@ -1,0 +1,29 @@
+.content-dispenser {
+  margin-top: 1.1rem;
+  display: block;
+  width: auto; 
+  height: 1rem;
+  overflow: hidden;
+  /* border: #ddd 1px solid; */
+  transition: .5s .1s;
+}
+
+.content-dispenser:hover {
+  height: auto;
+}
+
+.dispenser-header {
+  margin-top: -1.1rem;
+  position: absolute;
+}
+
+.content-dispenser div.dispenser-inner {
+  display: block;
+  transform: translateY(-130%);
+  transition: .5s .1s;
+}
+
+.content-dispenser:hover div.dispenser-inner {
+  display: block;
+  transform: translateY(1%);
+}

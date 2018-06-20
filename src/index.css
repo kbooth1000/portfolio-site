@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.header div {
+  -ms-flex: 1 1;
+  /* flex: 1 1; */
+
+  /* border: 1px #c33 solid;
+  min-height: 2vh; */
+}
+
+.header {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: flex-start;
+  height: 15vh;
+  -webkit-transition: 0.4s ease-out;
+  -o-transition: 0.4s ease-out;
+  transition: 0.4s ease-out;
+  -ms-flex-flow: row-reverse;
+  flex-flow: row-reverse;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: .5rem;
+}
+
+.header.landing {
+  height: 100vh;
+}
+
+.header .logo {
+  width: auto;
+  height: auto;
+  text-align: center;
+  position: static;
+  white-space: nowrap;
+  -webkit-transform: scale(.65);
+  -ms-transform: scale(.65);
+  transform: scale(.65);
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+}
+
+.header.landing .logo {
+  width: auto;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  top: 50vh;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  /* transform: scale(1) translateX(-50%); */
+  transform-origin: 0;
+}
+
+.header .logo h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.65rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  margin: 0;
+}
+.header .logo h2 {
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.72rem;
+  margin: 0.6rem 0;
+  font-weight: 100;
+  font-family: Lato;
+}
+
+.contactContent {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 18rem;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  float: right;
+  -ms-flex-align: right;
+  align-items: right;
+  margin-right: 1.5rem;
+}
+.contact-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.contact-content ul li {
+  display: block;
+  color: #777;
+  padding: 2px 5px;
+  font-family: 'Lato';
+}
+.contact-content ul li a {
+  text-decoration: none;
+  color: #444;
+}
+
