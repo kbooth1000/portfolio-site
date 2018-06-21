@@ -7,6 +7,14 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+.transition-3 {
+  transition: .3s ease-out;
+}
+
 .container {
   display: -ms-flexbox;
   display: flex;
@@ -14,7 +22,11 @@ body {
   justify-content: center;
   -ms-flex-align: start;
   align-items: flex-start;
-  height: 100vh;
+  height: 8rem;
+}
+
+.container.landing-screen {
+  height: 97vh;
 }
 
 .header div {
@@ -44,8 +56,8 @@ body {
   padding: .5rem;
 }
 
-.header.landing {
-  height: 100vh;
+.landing-screen .header {
+  height: 99vh;
 }
 
 .header .logo {
@@ -62,7 +74,7 @@ body {
   transform-origin: 0;
 }
 
-.header.landing .logo {
+.landing-screen .header .logo {
   width: auto;
   height: auto;
   text-align: center;
