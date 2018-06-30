@@ -2,13 +2,17 @@ ul.projects-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 ul.projects-list li {
   display: block;
-  flex:1;
+  flex:0;
   padding: 1rem;
-  flex-basis: 20%;
+  flex-basis: 22%;
+  min-width: 250px;
 }
 
 .projectThumbnail {
