@@ -1,34 +1,15 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import Header from './Header';
-import ContentDispenser from './utils/ContentDispenser';
-import Test from './Test';
-import Projects from './Projects';
-import About from './About';
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Main from './Main';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-     headerClass: 'landing-screen'
-    }
-  }
-  render() {
-    return (
-      <Provider>
-        <Router>
-          <div>
-            <div className={'container transition-3 ' + this.state.headerClass}>
-              <Header retractHeader={()=>this.setState({headerClass:'top'})} expandHeader={()=>this.setState({headerClass:'landing-screen'})} />
-            </div>
-            <Route exact path="/about" component={About} />
-            <Route exact path="/projects" component={Projects} />
-          </div>
-        </Router>
-      </Provider>
-    );
-  }
+let App = () => {
+  return (
+    <Router>
+          
+          <Route path="/" component={Main} />
+
+      </Router>
+  )
 }
 
 export default App;

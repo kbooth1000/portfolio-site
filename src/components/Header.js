@@ -1,7 +1,11 @@
 import React from 'react';
-import ContactInfo from './ContactInfo';
-import ContentDispenser from './utils/ContentDispenser';
+// import ContactInfo from './ContactInfo';
+// import ContentDispenser from './utils/ContentDispenser';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+
+import { setHeaderClass} from '../actions/actions';
 
 let Logo = () => {
   return (
@@ -12,29 +16,48 @@ let Logo = () => {
   );
 };
 
-let Header = ({ retractHeader, expandHeader }) => {
-  return (
-    <header className="header transition-3">
-      <ContentDispenser label="Contact" content={<ContactInfo />} />
+let Header = (props) => {
+  console.log('stheadrcls: ', props.setMainClass);
+  
+let mainClass = props.headerClass;
 
-      <div className="logo-holder transition-3" />
-      <Link to="/" onClick={expandHeader} >
+  return (
+    <header className='header transition-3'>
+      <Link to="/">
         <Logo />
       </Link>
-      <ul className="main-nav">
-        <li>
-          <Link to="/about" onClick={retractHeader}>
+      <ul className="nav-links">
+        <li >
+          <Link to="/about">
             About
           </Link>
         </li>
         <li>
-          <Link to="/projects" onClick={retractHeader}>
+          <Link to="/projects">
             Work
           </Link>
         </li>
+        <li>
+          <Link to="/contact">
+            Contact
+          </Link>
+        </li>
       </ul>
+      
     </header>
   );
 };
 
-export default Header;
+
+let mapDispatchToProps = {
+  setMainClass: setHeaderClass
+};
+
+let mapStateToProps = state => {
+  return {
+    headerClass: state.layout.headerClass
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
+

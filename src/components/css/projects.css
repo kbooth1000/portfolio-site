@@ -1,0 +1,16 @@
+ul.projects-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+ul.projects-list li {
+  display: block;
+  flex:1;
+  padding: 1rem;
+  flex-basis: 20%;
+}
+
+.projectThumbnail {
+  width: 100%;
+}
