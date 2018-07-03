@@ -17,4 +17,5 @@ ul.projects-list li {
 
 .projectThumbnail {
   width: 100%;
+  box-shadow: #bbb 0 0 6px;
 }

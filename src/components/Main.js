@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import {Switch, Route, Router} from 'react-router-dom';
 import Header from './Header';
 import Projects from './Projects';
+import Project from './Project';
 import About from './About';
 
 class Main extends Component {
@@ -13,7 +15,9 @@ class Main extends Component {
 
   render() {
     let mainClass = this.props.location.pathname.split('/')[1];
-    (mainClass === '') ? mainClass = 'landing-screen' : mainClass = 'content-page ' + mainClass;
+    mainClass === ''
+      ? (mainClass = 'landing-screen')
+      : (mainClass = 'content-page ' + mainClass);
 
     return (
       <div>
@@ -31,19 +35,20 @@ class Main extends Component {
             <div className="c c6">6</div>
           </div>
           <div className="row r3">
-
             <div className="content-block">
               <div className="content-flex">
-            <div className="c c7">
-              <About />
+                <div className="c c7">
+                  <About />
+                </div>
+                <div className="c c8">
+                  <Switch>
+                    <Route path="/project" component={Project} />
+                    <Route path="/projects" component={Projects} />
+                  </Switch>
+                </div>
+                <div className="c c9">CONTACT</div>
+              </div>
             </div>
-            <div className="c c8">
-              <Projects />
-            </div>
-            <div className="c c9">CONTACT</div>
-            </div>
-            </div>
-
           </div>
           <div className="row r4 footer">footer</div>
         </div>
