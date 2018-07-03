@@ -5,11 +5,9 @@ import Main from './Main';
 let App = () => {
   return (
     <Router>
-          
-          <Route path="/" component={Main} />
-
-      </Router>
-  )
-}
+      <Route path="/" component={Main} />
+    </Router>
+  );
+};
 
 export default App;

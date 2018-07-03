@@ -113,8 +113,8 @@ a {
 .footer {
   display: flex;
   justify-content: center;
-  height: 45px;
-  background: #fff;
+  height: 95px;
+  background: url(./components/images/atl.svg);
   width: 100%;
   align-items: center;
 }
