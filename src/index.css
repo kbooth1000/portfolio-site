@@ -116,7 +116,12 @@ a {
   height: 95px;
   background: url(./components/images/atl.svg);
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
+  color: #777;
+  font-size: .68rem;
+  font-weight: 100;
+  letter-spacing: .2rem;
+  padding-bottom: 2px;
 }
 
 .landing-screen .footer {
@@ -289,6 +294,8 @@ a { text-decoration: none; }
   .content-flex {
     display: flex;
   }
+
+
 
  @media screen and (max-width:400px) {
   .landing-screen .header .logo {

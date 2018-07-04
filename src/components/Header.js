@@ -3,8 +3,6 @@ import React from 'react';
 // import ContentDispenser from './utils/ContentDispenser';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { withRouter } from 'react-router-dom';
-
 import { setHeaderClass} from '../actions/actions';
 
 let Logo = () => {
@@ -16,10 +14,13 @@ let Logo = () => {
   );
 };
 
+
 let Header = (props) => {
-  console.log('stheadrcls: ', props.setMainClass);
+  // console.log('stheadrcls: ', props.setMainClass('jgjg'));
   
-let mainClass = props.headerClass;
+  let handleClick = (projectkey) => {
+    return props.setMainClass(projectkey);
+  }
 
   return (
     <header className='header transition-3'>
@@ -28,17 +29,17 @@ let mainClass = props.headerClass;
       </Link>
       <ul className="nav-links">
         <li >
-          <Link to="/about">
+          <Link to="/about" onClick={()=>handleClick('content-page about')}>
             About
           </Link>
         </li>
         <li>
-          <Link to="/projects">
+          <Link to="/projects" onClick={()=>handleClick('content-page projects')}>
             Work
           </Link>
         </li>
         <li>
-          <Link to="/contact">
+          <Link to="/contact" onClick={()=>handleClick('content-page contact')}>
             Contact
           </Link>
         </li>

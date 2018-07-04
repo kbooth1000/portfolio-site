@@ -1,3 +1,9 @@
+.Projects {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
 ul.projects-list {
   display: flex;
   justify-content: center;
@@ -18,4 +24,18 @@ ul.projects-list li {
 .projectThumbnail {
   width: 100%;
   box-shadow: #bbb 0 0 6px;
+}
+
+.projectBox {
+  transition: 1s;
+  flex: 1;
+}
+
+.projectBox:not(.project-open) {
+  opacity: 0;
+  height: 0;
+  flex: 0;
+  width: 0;
+  padding: 0;
+  min-width: 0;
 }
