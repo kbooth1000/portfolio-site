@@ -19,12 +19,12 @@ let Header = (props) => {
   // console.log('stheadrcls: ', props.setMainClass('jgjg'));
   
   let handleClick = (projectkey) => {
-    return props.setMainClass(projectkey);
+     props.setMainClass(projectkey);
   }
 
   return (
     <header className='header transition-3'>
-      <Link to="/">
+      <Link to="/" onClick={()=>handleClick('landing-screen')}>
         <Logo />
       </Link>
       <ul className="nav-links">

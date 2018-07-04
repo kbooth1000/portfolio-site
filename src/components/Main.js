@@ -8,27 +8,32 @@ import Project from './Project';
 import About from './About';
 
 class Main extends Component {
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     headerClass: 'landing-screen'
-  //   };
-  // }
+  constructor(props){
+    super();
+  }
 
-  render() {
+  componentDidMount(){
+    
     let routePath = this.props.location.pathname.split(/[:/]+/);
     let routeClass = routePath[routePath.length - 1];
-  //  if (routeClass.split(':')!='') routeClass = routeClass.split(':')[1];
-    console.log('routeClass', routeClass);
+    if(routePath[routePath.length - 2] === 'project') routeClass += ' display-project ';
     
-    routeClass === ''
-      ? this.props.setMainClass('landing-screen')
-      : this.props.setMainClass('content-page ' + routeClass);
+    console.log('routeClass: ', routeClass);
+    if(routeClass === '' )
+     {this.props.setMainClass('landing-screen')} else
+    { this.props.setMainClass('content-page ' + routeClass);}
+  }
+  
+  render() {
 
-    // this.headerClass === '' ? mainClass = 'landing-page' : mainClass = this.setHeaderClass()
+    // let routePath = this.props.location.pathname.split(/[:/]+/);
+    // let routeClass = routePath[routePath.length - 1];
+    // if(routePath[routePath.length - 2] === 'project') routeClass += ' display-project ';
 
     let mainClass = this.props.headerClass;
-    console.log('mainClass: ', routeClass);
+    
+    console.log('mainClass: ', mainClass);
+    
     
 
     return (

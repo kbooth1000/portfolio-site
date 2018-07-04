@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import projectsObject from './projectsObject';
 import './css/projects.css';
 import { setHeaderClass } from '../actions/actions';
 
-let Projects = (props) => {
+let Projects = props => {
   console.log('props: ', props);
-  
+
   let importAll = r => r.keys().map(r);
 
   let imagepaths = importAll(
@@ -17,14 +17,21 @@ let Projects = (props) => {
   let projectsList = projectsObject.projects.map(project => {
     let pic = imagepaths.find(path => path.includes(project.key));
 
-  let handleClick = (projectkey) => {
-    return props.setMainClass(projectkey);
-  }
+    let handleClick = projectkey => {
+      props.setMainClass(projectkey);
+    };
 
     return (
-      <li key={project.key} className={'projectBox project-open '+ project.key}>
-        <Link to={`/project/${project.key}`}>
-          <img onClick={()=>handleClick('content-page '+project.key)} src={pic} alt={project.title} className="projectThumbnail" />
+      <li
+        key={project.key}
+        className={'projectBox project-open ' + project.key}
+      >
+        <Link to={`/project/${project.key}`} onClick={() => handleClick('content-page ' + project.key)}>
+          <img
+            src={pic}
+            alt={project.title}
+            className="projectThumbnail"
+          />
           {project.key}
         </Link>
       </li>
@@ -41,10 +48,13 @@ let Projects = (props) => {
 
 let mapStateToProps = state => ({
   headerClass: state.layout.headerClass
-})
+});
 
 let matchDispatchToProps = {
   setMainClass: setHeaderClass
-}
+};
 
-export default connect(mapStateToProps, matchDispatchToProps)(Projects);
+export default connect(
+  mapStateToProps,
+  matchDispatchToProps
+)(Projects);
