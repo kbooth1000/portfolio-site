@@ -2,6 +2,7 @@
   width: 100%;
   text-align: center;
   margin-bottom: 4rem;
+  overflow: hidden;
 }
 
 ul.projects-list {
@@ -38,4 +39,15 @@ ul.projects-list li {
   width: 0;
   padding: 0;
   min-width: 0;
+}
+
+.sky {
+  position: fixed;
+  width: 110%;
+  height: 11rem;
+  border-radius: 50% 50% 0 0;
+  background: rgb(98, 173, 173);
+  box-shadow: rgb(98, 173, 173) 0 -2rem 1rem;
+  bottom: -50px;
+  z-index: -1;
 }

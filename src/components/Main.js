@@ -26,10 +26,6 @@ class Main extends Component {
   
   render() {
 
-    // let routePath = this.props.location.pathname.split(/[:/]+/);
-    // let routeClass = routePath[routePath.length - 1];
-    // if(routePath[routePath.length - 2] === 'project') routeClass += ' display-project ';
-
     let mainClass = this.props.headerClass;
     
     console.log('mainClass: ', mainClass);
