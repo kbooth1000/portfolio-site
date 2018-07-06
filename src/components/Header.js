@@ -28,17 +28,17 @@ let Header = (props) => {
         <Logo />
       </Link>
       <ul className="nav-links">
-        <li >
+        <li className={(props.headerClass.includes('about'))?'active':''}>
           <Link to="/about" onClick={()=>handleClick('content-page about')}>
             About
           </Link>
         </li>
-        <li>
+        <li className={(props.headerClass.includes('projects'))?'active':''}>
           <Link to="/projects" onClick={()=>handleClick('content-page projects')}>
             Work
           </Link>
         </li>
-        <li>
+        <li className={(props.headerClass.includes('contact'))?'active':''}>
           <Link to="/contact" onClick={()=>handleClick('content-page contact')}>
             Contact
           </Link>

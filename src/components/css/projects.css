@@ -1,7 +1,7 @@
 .Projects {
   width: 100%;
   text-align: center;
-  margin-bottom: 4rem;
+  margin: 1.5rem auto 4rem;
   overflow: hidden;
 }
 
@@ -28,8 +28,9 @@ ul.projects-list li {
 }
 
 .projectBox {
-  transition: 1s;
+  transition: flex 1s .2s, opacity .5s .01s;
   flex: 1;
+  overflow: hidden;
 }
 
 .projectBox:not(.project-open) {
@@ -39,6 +40,9 @@ ul.projects-list li {
   width: 0;
   padding: 0;
   min-width: 0;
+  transition: width 0.6s, all .5s 1s, flex-wrap 0 1s;  
+  position: absolute;
+  
 }
 
 .sky {
@@ -50,4 +54,12 @@ ul.projects-list li {
   box-shadow: rgb(98, 173, 173) 0 -2rem 1rem;
   bottom: -50px;
   z-index: -1;
+}
+
+@media screen and (max-width:550px) {
+
+  .Projects {
+    margin: 0 auto 4rem;
+  }
+  
 }

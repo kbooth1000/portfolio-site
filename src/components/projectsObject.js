@@ -16,28 +16,36 @@ let projectsObject = {
       title: 'Dark Horse Woodworks, Inc.',
       tech: ['wp', 'php', 'html'],
       order: 2,
-      description: ``
+      description: `<p>I designed and built this award-winning luxury&nbsp;cabinetry company’s <a href="http://darkhorsewoodworks.com/" target="_blank">website</a>.</p>`
     },
     {
       key: 'theatre-in-the-square',
       title: 'Theatre in the Square',
       tech: ['wp', 'php', 'html'],
       order: 3,
-      description: ``
+      description: `Marietta’s New Theatre in the Square had just been rescued from near abandonment by an enthusiastic new group of people who were struggling to bring life back to the venue. While the company put together its first new shows, they also needed to get the word out so that audience seats would be filled. They needed a website that would be professional, yet fun, invoking stability as well as change. It also needed to have a backend that would be simple enough for volunteer interns to update easily.
+
+      I designed and built this site for them using highly customized WordPress theme, into which I integrated theatre-specific data input fields and displays, such as showtimes, dates, prices, postcard images, etc.
+      
+      This is what the site looked like when I turned it over to them.`
     },
     {
       key: 'the-naked-crepe',
       title: 'The Naked Crepe',
       tech: ['wp', 'php', 'html'],
       order: 4,
-      description: ``
+      description: `This small upstart catering business needed a website that was clean and elegant, while still being personal and inviting.
+
+      I designed and built this website for them.`
     },
     {
       key: 'whitman-publishing',
       title: 'Whitman Publishing map/timeline app',
-      tech: ['wp', 'php', 'html'],
+      tech: ['js', 'html'],
       order: 5,
-      description: ``
+      description: `<p>Worked with a small team of designers and coders on a complete redesign of whitman.com. Specifically, I worked on the UX and front-end coding of the overall site.</p>
+  <p>One unique area of the site is an interactive map and timeline displaying US National Park quarters. The app allows users to scroll a timeline to see which quarters were released in which year. Users can also click any state on a map and see the quarters that represent that particular state.</p>
+  <p>Take a look at the <a class="project-image" href="https://www.whitman.com/store/Inventory/Browse/National-Park-Quarters-Products" target="_blank">site</a>.</p>`
     },
     {
       key: 'wheeldesks',
@@ -51,14 +59,15 @@ let projectsObject = {
       title: 'Headlight Logic',
       tech: ['wp', 'php', 'html'],
       order: 7,
-      description: ``
+      description: `<p>Headlight Logic needed a place where customers could learn about and directly order their services online.</p>
+      <p>I designed and built <a href="http://headlightlogic.com">this website/web app</a> for them.</p>`
     },
     {
       key: 'dimensionworks',
       title: 'DimensionWorks',
       tech: ['wp', 'php', 'html'],
       order: 8,
-      description: ``
+      description: `<p>Designed and built this concept-to-completion construction company’s <a href="http://www.dimensionworks.com/dw/" target="_blank">website</a>.</p>`
     }
   ],
   get: function(id) {

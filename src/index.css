@@ -259,6 +259,17 @@ a { text-decoration: none; }
   flex: 4;
 }
 
+.nav-links a {
+    padding: 1px 5px 0;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.nav-links li.active,.nav-links li:hover {
+  font-weight: 900;
+  border-bottom: 2px #ddd solid;
+}
+
 .content-page .nav-links {
   margin: -.5rem 0 0;
   padding: 0;
@@ -272,7 +283,7 @@ a { text-decoration: none; }
   }
 
   /* PAGE-8   */
-  .projects .c7,  .projects .c9 {
+  .projects .c7,  .projects .c9, .display-project .c7,  .display-project .c9 {
     opacity: 0;
     height: 0;
     flex: 0;
@@ -296,6 +307,16 @@ a { text-decoration: none; }
   }
 
 
+
+  @media screen and (max-width:600px) {
+    .content-page .header a {
+      width: 100%;
+    }
+
+   .content-page .header .logo {
+    margin: auto;
+  }
+ }
 
  @media screen and (max-width:400px) {
   .landing-screen .header .logo {
