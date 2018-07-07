@@ -16,6 +16,8 @@
   margin-top: -1.1rem;
   position: absolute;
   cursor: pointer;
+  font-size: .9rem;
+  color: #999;
 }
 
 .content-dispenser div.dispenser-inner {

@@ -6,6 +6,8 @@ import Header from './Header';
 import Projects from './Projects';
 import Project from './Project';
 import About from './About';
+import ContentDispenser from './utils/ContentDispenser';
+import MoreInfo from './MoreInfo';
 
 class Main extends Component {
   constructor(props){
@@ -44,6 +46,7 @@ class Main extends Component {
             <div className="c c4">4</div>
             <div className="c c5">
               <Header />
+              <ContentDispenser label="more..." content={<MoreInfo />} addCss={{top: '2rem', position: 'fixed', right: '2rem'}} />
             </div>
             <div className="c c6">6</div>
           </div>
