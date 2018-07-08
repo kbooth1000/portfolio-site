@@ -16,7 +16,7 @@ let projectsObject = {
       title: 'Dark Horse Woodworks, Inc.',
       tech: ['wp', 'php', 'html'],
       order: 2,
-      description: `<p>I designed and built this award-winning luxury&nbsp;cabinetry company’s <a href="http://darkhorsewoodworks.com/" target="_blank">website</a>.</p>`
+      description: `<p>I designed and built this award-winning luxury&nbsp;cabinetry company’s <a href="http://darkhorsewoodworks.com/" target="_blank">website</a>.</p><flkm>aldksfj</flkm>`
     },
     {
       key: 'theatre-in-the-square',

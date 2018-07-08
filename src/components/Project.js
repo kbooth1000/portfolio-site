@@ -29,7 +29,7 @@ let Project = props => {
       
       <div className="content-box">
         <img src={pic} alt="" className="project-img-main" /><br />
-      <div className="project-description">{htmlDecode(project.description)}</div>
+      <div className="project-description"><p dangerouslySetInnerHTML = { {__html: sanitizeHtml(project.description)} }></p></div>
       </div>
     </div>
   );

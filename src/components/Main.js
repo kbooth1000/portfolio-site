@@ -8,6 +8,7 @@ import Project from './Project';
 import About from './About';
 import ContentDispenser from './utils/ContentDispenser';
 import MoreInfo from './MoreInfo';
+import Contact from './Contact';
 
 class Main extends Component {
   constructor(props){
@@ -62,7 +63,7 @@ class Main extends Component {
                     <Route path="/projects" component={Projects} />
                   </Switch>
                 </div>
-                <div className="c c9">CONTACT</div>
+                <div className="c c9"><Contact /></div>
               </div>
             </div>
           </div>
