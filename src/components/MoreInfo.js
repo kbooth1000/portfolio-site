@@ -7,20 +7,6 @@ class ContactInfo extends Component {
      <div className="contact-content dispenser-inner">
      <ul>
        <li>
-       <i class="fas fa-phone fa-sm"></i>&nbsp;
-         <span>phone:</span>{' '}
-         <span>
-           <a href="tel:4044888721">(404) 488-8721</a>
-         </span>
-       </li>
-       <li>
-       <i class="fas fa-envelope-square fa-sm"></i>&nbsp;
-         <span>email:</span>{' '}
-         <span>
-           <a href="mailto:kbooth1000@gmail.com">kbooth1000@gmail.com</a>
-         </span>
-       </li>
-       <li>
        <i class="fab fa-linkedin fa-sm"></i>&nbsp;
          <span>linkedIn:</span>{' '}
          <span>

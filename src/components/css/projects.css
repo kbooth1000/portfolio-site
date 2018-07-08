@@ -1,0 +1,65 @@
+.Projects {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul.projects-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+ul.projects-list li {
+  display: block;
+  flex:0;
+  padding: 1rem;
+  flex-basis: 22%;
+  min-width: 250px;
+}
+
+.projectThumbnail {
+  width: 100%;
+  box-shadow: #bbb 0 0 6px;
+}
+
+.projectBox {
+  transition: flex 1s .2s, opacity .5s .01s;
+  flex: 1;
+  overflow: hidden;
+}
+
+.projectBox:not(.project-open) {
+  opacity: 0;
+  height: 0;
+  flex: 0;
+  width: 0;
+  padding: 0;
+  min-width: 0;
+  transition: width 0.6s, all .5s 1s, flex-wrap 0 1s;  
+  position: absolute;
+  
+}
+
+.sky {
+  position: fixed;
+  width: 110%;
+  height: 11rem;
+  border-radius: 50% 50% 0 0;
+  background: rgb(98, 173, 173);
+  box-shadow: rgb(98, 173, 173) 0 -2rem 1rem;
+  bottom: -50px;
+  z-index: -1;
+}
+
+@media screen and (max-width:550px) {
+
+  .Projects {
+    margin: 0 auto 4rem;
+  }
+  
+}

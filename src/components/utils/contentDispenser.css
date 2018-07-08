@@ -4,17 +4,20 @@
   width: auto; 
   height: 1rem;
   overflow: hidden;
-  /* border: #ddd 1px solid; */
-  transition: .5s .1s;
+  transition: .5s 2.1s;
 }
 
 .content-dispenser:hover {
   height: auto;
+  transition: .5s .5s;
 }
 
 .dispenser-header {
   margin-top: -1.1rem;
   position: absolute;
+  cursor: pointer;
+  font-size: .9rem;
+  color: #999;
 }
 
 .content-dispenser div.dispenser-inner {
@@ -26,4 +29,5 @@
 .content-dispenser:hover div.dispenser-inner {
   display: block;
   transform: translateY(1%);
+  transition: .5s .1s;
 }
