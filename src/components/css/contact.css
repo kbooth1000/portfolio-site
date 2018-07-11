@@ -1,0 +1,22 @@
+.contact-form #success {
+  left: 50%;
+  position: absolute;
+  top: 5rem;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  transform-origin: 50%;
+  text-align: center;
+  animation: flash-message 4s forwards;
+}
+
+@keyframes flash-message {
+  0% {opacity: 0; transform: translateX(-50%) scale(.85); left: 50%;
+    top: 4rem; }
+  15% {opacity: 1; transform: translateX(-50%) scale(1);left: 50%;
+    top: 4rem; }
+  75% {opacity: 1; transform: translateX(-50%) scale(1);left: 50%;
+    top: 4rem; }
+  100% {opacity: 0; transform: translateX(-50%) scale(0);left: 50%;
+    top: 4rem;  }
+
+}

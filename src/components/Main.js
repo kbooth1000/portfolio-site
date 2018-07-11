@@ -19,7 +19,7 @@ class Main extends Component {
     
     let routePath = this.props.location.pathname.split(/[:/]+/);
     let routeClass = routePath[routePath.length - 1];
-    if(routePath[routePath.length - 2] === 'project') routeClass += ' display-project ';
+    (routePath[routePath.length - 2] === 'project') ? routeClass += ' display-project ' : routeClass = routeClass;
     
     console.log('routeClass: ', routeClass);
     if(routeClass === '' )
