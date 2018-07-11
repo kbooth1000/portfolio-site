@@ -8,15 +8,14 @@ let projectsObject = {
       description: `<p>This was a project that I and three other developers did over the course of two weeks. We used ReactJS with Redux for the frontend and NodeJS with PostgreSQL on the backend.</p>
 		<p>Here’s the <a href="https://github.com/BGamber/digicaching/" target="_blank" rel="noopener">github repo</a>.<br>
 		And here’s the current version of <a href="https://digicaching.herokuapp.com/" target="_blank" rel="noopener">the live app</a>. (We plan on continuing to improve it.)</p>
-		<p>We built this app mostly to practice and improve our full-stack developing skills.</p>
-		<p>&nbsp;</p`
+		<p>We built this app mostly to practice and improve our full-stack developing skills.</p>`
     },
     {
       key: 'dark-horse-woodworks',
       title: 'Dark Horse Woodworks, Inc.',
       tech: ['wp', 'php', 'html'],
       order: 2,
-      description: `<p>I designed and built this award-winning luxury&nbsp;cabinetry company’s <a href="http://darkhorsewoodworks.com/" target="_blank">website</a>.</p><flkm>aldksfj</flkm>`
+      description: `<p>I designed and built this award-winning luxury&nbsp;cabinetry company’s <a href="http://darkhorsewoodworks.com/" target="_blank">website</a>.</p>`
     },
     {
       key: 'theatre-in-the-square',

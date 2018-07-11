@@ -8,20 +8,32 @@ class ContactForm extends Component {
       name: 'NAME',
       email: 'EMAIL',
       message: 'MESSAGE'
-    }
+    };
   }
 
   render() {
     return (
       <div>
-        Contact Form 
-        {this.state.name + ', ' + this.state.email + ', ' + this.state.message}
-        <br/>
-        <FormInput type="text" name="name" />
-        <FormInput type="text" name="email" />
-        <FormInput type="textarea" name="message" />
+        Contact Form
+        <form method="POST">
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" />
+
+          <label htmlFor="email">Email</label>
+          <input type="email" name="email" />
+
+          <label htmlFor="message">Message</label>
+          <textarea name="message" rows="3" />
+
+          <input type="submit" />
+        </form>
+        {/* <br />
+        <FormInput type="text" name="name" label="Name" />
+        <FormInput type="text" name="email" label="Email" />
+        <FormInput type="textarea" name="message" label="Message" />
+        <FormInput type="submit" /> */}
       </div>
-    )
+    );
   }
 }
 

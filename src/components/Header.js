@@ -1,6 +1,4 @@
 import React from 'react';
-// import ContactInfo from './ContactInfo';
-// import ContentDispenser from './utils/ContentDispenser';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setHeaderClass} from '../actions/actions';

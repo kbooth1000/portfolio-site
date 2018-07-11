@@ -19,7 +19,7 @@ class Main extends Component {
     
     let routePath = this.props.location.pathname.split(/[:/]+/);
     let routeClass = routePath[routePath.length - 1];
-    if(routePath[routePath.length - 2] === 'project') routeClass += ' display-project ';
+    (routePath[routePath.length - 2] === 'project') ? routeClass += ' display-project ' : routeClass = routeClass;
     
     console.log('routeClass: ', routeClass);
     if(routeClass === '' )
@@ -47,7 +47,7 @@ class Main extends Component {
             <div className="c c4">4</div>
             <div className="c c5">
               <Header />
-              <ContentDispenser label="more..." content={<MoreInfo />} addCss={{top: '2rem', position: 'fixed', right: '2rem'}} />
+              <ContentDispenser label="more..." content={<MoreInfo />} cssClass="more-info" />
             </div>
             <div className="c c6">6</div>
           </div>

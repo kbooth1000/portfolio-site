@@ -3,11 +3,18 @@
   margin: 0 auto 5rem;
   max-width: 900px;
   overflow: hidden;
+  transition: 1s;
 }
 
 .project-page .content-box {
   display: flex;
   flex-direction: column;
+  line-height: 1.3rem; 
+}
+
+.content-box a {
+  border-bottom: 2px #999 solid;
+  color: #222;
 }
 
 .project-title {

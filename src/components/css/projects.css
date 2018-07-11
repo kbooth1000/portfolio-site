@@ -45,6 +45,26 @@ ul.projects-list li {
   
 }
 
+.project-thumb-techs {
+  font-size: .75rem;
+}
+
+.project-thumb-techs::before {
+  content: '(';
+}
+
+.project-thumb-techs::after {
+  content: ')';
+}
+
+.project-thumb-techs span::after {
+  content: ', ';
+}
+
+.project-thumb-techs span:last-child::after {
+  content: '';
+}
+
 .sky {
   position: fixed;
   width: 110%;
