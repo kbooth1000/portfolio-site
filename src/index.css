@@ -307,6 +307,14 @@ a { text-decoration: none; }
     margin: 1.5rem auto 4rem;
   }
 
+  .more-info {
+    top: 2rem; position: fixed; right: 2rem;
+  }
+
+  @keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1}
+  }
 
 
   @media screen and (max-width:600px) {
@@ -317,6 +325,17 @@ a { text-decoration: none; }
    .content-page .header .logo {
     margin: auto;
   }
+
+  .content-page .more-info {
+    display: none;
+  }
+
+  .more-info {
+    top: calc(50% + 8rem);
+    animation: fade-in 3s forwards;
+    opacity: 0;
+  }
+
  }
 
  @media screen and (max-width:400px) {
