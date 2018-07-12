@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, Redirect} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {setHeaderClass} from '../actions/actions';
 import Header from './Header';
@@ -60,7 +60,8 @@ class Main extends Component {
                 <div className="c c8">
                   <Switch>
                     <Route path="/project" component={Project} />
-                    <Route path="/projects" component={Projects} />
+                    <Route exact path="/projects" component={Projects} />
+                    
                   </Switch>
                 </div>
                 <div className="c c9"><Contact /></div>
