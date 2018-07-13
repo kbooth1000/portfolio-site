@@ -4,7 +4,7 @@ import './css/contact.css';
 // import './ContactForm.css'
 
 const ContactFormA = () => (
-  <form className="contact-form" method="POST" action="/contact-form">
+  <form className="contact-form" method="POST" action="/contact-form" netlify>
     <div className="form-field">
       <label htmlFor="name">
         <div className="label-content">Name:</div>
