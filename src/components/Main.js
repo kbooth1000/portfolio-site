@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Switch, Route, Redirect} from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import {connect} from 'react-redux';
 import {setHeaderClass} from '../actions/actions';
 import Header from './Header';
@@ -19,7 +19,7 @@ class Main extends Component {
     
     let routePath = this.props.location.pathname.split(/[:/]+/);
     let routeClass = routePath[routePath.length - 1];
-    (routePath[routePath.length - 2] === 'project') ? routeClass += ' display-project ' : routeClass = routeClass;
+    if (routePath[routePath.length - 2] === 'project') { routeClass += ' display-project '};
     
     console.log('routeClass: ', routeClass);
     if(routeClass === '' )

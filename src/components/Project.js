@@ -5,12 +5,7 @@ import projectsObject from './projectsObject';
 import './css/project.css';
 import { setHeaderClass } from '../actions/actions';
 
-let htmlDecode = input => {
-  var doc = new DOMParser().parseFromString(input, 'text/html');
-  return doc.documentElement.textContent;
-};
-
-let cleanHTML = input => sanitizeHtml(input);
+let onClickHandler = (fn,cl) => fn(cl);
 
 let Project = props => {
   let routeClass = props.location.pathname.split(/[:/]+/).pop();
@@ -22,10 +17,9 @@ let Project = props => {
   );
   let pic = imagepaths.find(path => path.includes(project.key));
 
-  let escapedHTML = escape(project.description);
   return (
     <div className="project-page">
-      <Link onClick={setHeaderClass('rerender')} to="/projects">  <i class="far fa-arrow-alt-circle-left fa-sm"></i>&nbsp;
+      <Link onClick={onClickHandler(setHeaderClass,'rerender')} to="/projects">  <i className="far fa-arrow-alt-circle-left fa-sm"></i>&nbsp;
          <span>back</span>
         </Link>
       <div className="project-title">

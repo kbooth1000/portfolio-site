@@ -46,7 +46,7 @@ class Projects extends Component {
           >
             <img src={pic} alt={project.title} className="projectThumbnail" />
             <div className="project-thumb-title">{project.title}</div>
-            <div className="project-thumb-techs">{project.tech.map(skill=>(<span>{techs[skill]}</span>))}</div>
+            <div className="project-thumb-techs">{project.tech.map(skill=>(<span key={skill}>{techs[skill]}</span>))}</div>
           </Link>
         </li>
       );
