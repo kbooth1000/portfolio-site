@@ -5,13 +5,13 @@ let mailer = require ('./mailer');
 
 const app = express()
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('*', (req, res) => {
   res.send('Server is working. Please post at "/contact-form" to submit a message.')
 })
 
-app.post('/contact-form', (req, res) => {
+app.post('/contact-orm', (req, res) => {
   const { email = '', name = '', message = '' } = req.body
 
   mailer({ email, name, text: message }).then(() => {

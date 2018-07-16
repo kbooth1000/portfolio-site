@@ -2,9 +2,14 @@ import React from 'react';
 import './css/contact.css';
 
 // import './ContactForm.css'
+let handleClick = (e) => {
+  // e.preventDefault();
+  console.log('HEY');
+  
+}
 
 const ContactFormA = () => (
-  <form className="contact-form" method="POST" action="/contact-form" name="contact-form">
+  <form className="contact-form" method="POST" name="contact-form" action="contact-form" onSubmit={handleClick}>
     <div className="form-field">
       <label htmlFor="name">
         <div className="label-content">Name:</div>
