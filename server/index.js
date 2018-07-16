@@ -3,7 +3,7 @@ let bodyParser = require ('body-parser');
 
 let mailer = require ('./mailer');
 
-const app = express()
+const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
