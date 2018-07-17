@@ -11,7 +11,7 @@ app.get('*', (req, res) => {
   res.send('Server is working. Please post at "/contact-form" to submit a message.')
 })
 
-app.post('/contact-orm', (req, res) => {
+app.post('/contact-form', (req, res) => {
   const { email = '', name = '', message = '' } = req.body
 
   mailer({ email, name, text: message }).then(() => {

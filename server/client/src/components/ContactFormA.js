@@ -1,15 +1,13 @@
 import React from 'react';
 import './css/contact.css';
 
-// import './ContactForm.css'
-let handleClick = (e) => {
-  // e.preventDefault();
-  console.log('HEY');
-  
-}
-
 const ContactFormA = () => (
-  <form className="contact-form" method="POST" name="contact-form" action="contact-form" onSubmit={handleClick}>
+
+
+
+
+  
+  <form className="contact-form" method="POST" name="contact-form" action="/contact-form">
     <div className="form-field">
       <label htmlFor="name">
         <div className="label-content">Name:</div>
@@ -27,13 +25,24 @@ const ContactFormA = () => (
     <div className="form-field">
       <label htmlFor="message">
         <div className="label-content">Message:</div>
-        <textarea className="stretch" name="message" rows="5" required />
+        <textarea className="stretch" name="message" rows="5" />
       </label>
     </div>
 
     <button type="submit">Send</button>
 
-
+    <div>
+      { window.location.hash === '#success' &&
+        <div id="success">
+          <p>Thank you!<br />Your message has been sent!</p>
+        </div>
+      }
+      { window.location.hash === '#error' &&
+        <div id="error">
+          <p>An error occured while submitting the form.</p>
+        </div>
+      }
+    </div>
   </form>
 )
 
