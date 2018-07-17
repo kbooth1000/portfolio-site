@@ -9,9 +9,10 @@
   },
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"cd server\" \"npm run server\" \"npm run client\""
+    "server": "cd server && nodemon index.js",
+    "client": "cd server && npm run start --prefix client",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +23,8 @@
     "nodemailer": "^4.6.7",
     "nodemailer-smtp-transport": "^2.7.4",
     "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
   }
 }
