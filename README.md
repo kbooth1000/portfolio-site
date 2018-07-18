@@ -6,7 +6,7 @@
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.p
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png
 
 This is my own portfolio; Built with React, Redux, Node.
 Meant to be simple, clean and functional.
