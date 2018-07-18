@@ -8,10 +8,11 @@
     "npm": "6.1.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node server/index.js",
+    "server": "cd server && nodemon index.js",
+    "client": "cd server && npm run start --prefix client",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix server/client && npm run build --prefix server/client"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +22,10 @@
     "express": "^4.16.3",
     "nodemailer": "^4.6.7",
     "nodemailer-smtp-transport": "^2.7.4",
+    "path": "^0.12.7",
     "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
   }
 }
