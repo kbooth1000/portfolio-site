@@ -114,7 +114,7 @@ export default () => {
                    <li>Whitman Publishing and Whitman Expos</li>
                    <li>Dalmatian and Piggytoes Press (children’s books)</li>
                    <li>Burnes of Boston (home decor)</li>
-                   <li>Stack's (auctioneer)</li>
+                   <li>Stacks (auctioneer)</li>
                  </ul>
                </li>
              </ul>
