@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import {Switch, Route} from 'react-router-dom';
-import {connect} from 'react-redux';
-import {setHeaderClass} from '../actions/actions';
+import { Switch, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { setHeaderClass } from '../actions/actions';
 import Header from './Header';
 import Projects from './Projects';
 import Project from './Project';
@@ -13,29 +13,32 @@ import Resume from './Resume';
 import './css/fonts.css';
 
 class Main extends Component {
-  constructor(props){
+  constructor(props) {
     super();
   }
 
-  componentDidMount(){
+  componentDidMount() {
+    console.log('componentdidmount');
     
     let routePath = this.props.location.pathname.split(/[:/]+/);
     let routeClass = routePath[routePath.length - 1];
-    if (routePath[routePath.length - 2] === 'project') { routeClass += ' display-project '};
-    
-    console.log('routeClass: ', routeClass);
-    if(routeClass === '' )
-     {this.props.setMainClass('landing-screen')} else
-    { this.props.setMainClass('content-page ' + routeClass);}
-  }
-  
-  render() {
+    if (routePath[routePath.length - 2] === 'project') {
+      routeClass += ' display-project ';
+    }
 
+    let contentPages = ['about', 'projects', 'contact', 'resume'];
+
+      if (contentPages.find(page=>page===routeClass) || routeClass.includes('display-project')) {
+        this.props.setMainClass('content-page ' + routeClass);
+      } else {
+        this.props.setMainClass('landing-screen');
+      }
+    };
+
+  render() {
     let mainClass = this.props.headerClass;
-    
+
     console.log('mainClass: ', mainClass);
-    
-    
 
     return (
       <div>
@@ -43,13 +46,19 @@ class Main extends Component {
           <div className="row r1">
             <div className="c c1">1</div>
             <div className="c c2">2</div>
-            <div className="c c3"><Resume /></div>
+            <div className="c c3">
+              <Resume />
+            </div>
           </div>
           <div className="row r2">
             <div className="c c4">4</div>
             <div className="c c5">
               <Header />
-              <ContentDispenser label="more..." content={<MoreInfo />} cssClass="more-info" />
+              <ContentDispenser
+                label="more..."
+                content={<MoreInfo />}
+                cssClass="more-info"
+              />
             </div>
             <div className="c c6">6</div>
           </div>
@@ -61,12 +70,15 @@ class Main extends Component {
                 </div>
                 <div className="c c8">
                   <Switch>
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/contact" component={Contact} />
                     <Route path="/project" component={Project} />
                     <Route exact path="/projects" component={Projects} />
-                    
                   </Switch>
                 </div>
-                <div className="c c9"><Contact /></div>
+                <div className="c c9">
+                  <Contact />
+                </div>
               </div>
             </div>
           </div>
@@ -83,6 +95,9 @@ let mapStateToProps = state => ({
 
 let mapDispatchToProps = {
   setMainClass: setHeaderClass
-}
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Main);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Main);

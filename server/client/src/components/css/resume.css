@@ -77,6 +77,10 @@ ul {
   flex-wrap: wrap;
 }
 
+.experience h3 {
+  margin: 0;
+}
+
 .experience .company {
   opacity: 1;
   

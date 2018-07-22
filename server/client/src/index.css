@@ -95,7 +95,7 @@ a {
 }
 
 .header .logo h1 {
-  font-family: Alegreya, serif;
+  font-family: Vollkorn, Alegreya, serif;
   font-size: 2.65rem;
   line-height: 2.25rem;
   text-transform: uppercase;
@@ -293,7 +293,9 @@ a { text-decoration: none; }
   flex: 1 1;
     display: table;
     padding: 1vw 4vw;
-  background: #d3d3ff;
+  /* background: #d3d3ff; */
+  border: 1px #ccc solid;
+  margin: 1rem;
 }
 
 .resume .c3 {
