@@ -1,3 +1,5 @@
+@import url(/css/fonts.css);
+
 body {
   margin: 0;
   padding: 0;
@@ -93,11 +95,11 @@ a {
 }
 
 .header .logo h1 {
-  font-family: 'Roboto Slab', serif;
+  font-family: Alegreya, serif;
   font-size: 2.65rem;
   line-height: 2.25rem;
   text-transform: uppercase;
-  letter-spacing: 0.35rem;
+  letter-spacing: 0.42rem;
   margin: 0;
 }
 .header .logo h2 {
@@ -274,6 +276,29 @@ a { text-decoration: none; }
   margin: -.5rem 0 0;
   padding: 0;
 }
+
+ /* PAGE-3   */
+
+
+ .resume .c {
+  flex: 0;
+  opacity: 0;
+  height: 0;
+  opacity: 1;
+}
+
+.resume .c3 {
+  height: 100px;
+  width: 100%;
+  flex: 1 1;
+    display: table;
+    padding: 1vw 4vw;
+  background: #d3d3ff;
+}
+
+.resume .c3 {
+  flex: 1;
+} 
 
   /* PAGE-7   */
   .about .c8, .about .c9 {

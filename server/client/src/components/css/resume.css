@@ -1,0 +1,113 @@
+.Resume {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2vw 5.5vw;
+}
+
+ul {
+  list-style: none;
+}
+
+#links, #skills, #experience-container {
+  min-width: 100%;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#links ul {
+  list-style: none;
+}
+
+#links ul li {
+  display: inline-block;
+  padding: .5rem;
+}
+
+#skills {
+  opacity: 1;
+  
+}
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills ul li {
+  display: inline-block;
+  padding: .5rem;
+}
+
+#experience-container {
+
+}
+
+.experience-header {
+  border-bottom: #999 1px dotted;
+}
+
+.experience-columns {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.column {
+  max-width: 900px;
+    margin: 1rem;
+    min-width: 315px;
+    flex: 1;
+}
+
+.column:last-child {
+  padding-left: 2rem;
+}
+
+.experience {
+  min-width: 30%;
+  width: 98%;
+  flex: .5;
+  flex-wrap: wrap;
+}
+
+.experience .company {
+  opacity: 1;
+  
+}
+
+.experience .job-title {
+  opacity: 1;
+  
+}
+
+.experience  {
+  opacity: 1;
+  
+}
+
+.experience .location {
+  opacity: 1;
+  
+}
+
+.experience .description {
+  opacity: 1;
+  
+}
+
+.experience .highlights ul {
+  opacity: 1;
+  
+}
+
+.experience .highlights ul li {
+  opacity: 1;
+  
+}

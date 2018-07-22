@@ -9,6 +9,8 @@ import About from './About';
 import ContentDispenser from './utils/ContentDispenser';
 import MoreInfo from './MoreInfo';
 import Contact from './Contact';
+import Resume from './Resume';
+import './css/fonts.css';
 
 class Main extends Component {
   constructor(props){
@@ -41,7 +43,7 @@ class Main extends Component {
           <div className="row r1">
             <div className="c c1">1</div>
             <div className="c c2">2</div>
-            <div className="c c3">3</div>
+            <div className="c c3"><Resume /></div>
           </div>
           <div className="row r2">
             <div className="c c4">4</div>
