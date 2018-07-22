@@ -1,4 +1,5 @@
 import React from 'react';
+import {Redirect} from 'react-router';
 import sanitizeHtml from 'sanitize-html-react';
 import { Link } from 'react-router-dom';
 import projectsObject from './projectsObject';
@@ -10,7 +11,9 @@ let onClickHandler = (fn,cl) => fn(cl);
 let Project = props => {
   let routeClass = props.location.pathname.split(/[:/]+/).pop();
   let project = projectsObject.get(routeClass);
-
+if(!project) {
+  return <Redirect to="/" />;
+}
   let importAll = r => r.keys().map(r);
   let imagepaths = importAll(
     require.context('./images/projectImages', false, /\.(png|jpe?g|svg)$/)
