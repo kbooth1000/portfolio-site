@@ -117,7 +117,7 @@ ul {
 }
 
 @media print {
-  .content-dispenser, .footer {
+  .content-dispenser, .footer, .back-button {
     display: none;
   }
 }
