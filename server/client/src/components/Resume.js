@@ -1,9 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import './css/project.css';
+import { setHeaderClass } from '../actions/actions';
 import './css/resume.css';
 
-export default () => {
+let onClickHandler = (fn,cl) => fn(cl);
+
+export default (props) => {
   return (
    <div className="Resume">
+   <Link onClick to="/">  <i className="far fa-arrow-alt-circle-left fa-sm"></i>&nbsp;
+         <span>back</span>
+        </Link>
      <h1>
        <b>Kyle Booth</b> Full-Stack Web Developer</h1>
      <div id="links">

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Redirect} from 'react-router';
+import {Redirect} from 'react-router-dom';
 import sanitizeHtml from 'sanitize-html-react';
 import { Link } from 'react-router-dom';
 import projectsObject from './projectsObject';
