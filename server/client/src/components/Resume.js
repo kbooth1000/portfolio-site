@@ -9,7 +9,7 @@ let onClickHandler = (fn,cl) => fn(cl);
 export default (props) => {
   return (
    <div className="Resume">
-   <Link onClick to="/">  <i className="far fa-arrow-alt-circle-left fa-sm"></i>&nbsp;
+   <Link onClick to="/" className="back-button">  <i className="far fa-arrow-alt-circle-left fa-sm"></i>&nbsp;
          <span>back</span>
         </Link>
      <h1>
