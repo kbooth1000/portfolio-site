@@ -8,6 +8,7 @@ import Project from './Project';
 import About from './About';
 import ContentDispenser from './utils/ContentDispenser';
 import MoreInfo from './MoreInfo';
+import PrintInfo from './PrintInfo';
 import Contact from './Contact';
 import Resume from './Resume';
 import './css/fonts.css';
@@ -55,8 +56,8 @@ class Main extends Component {
             <div className="c c5">
               <Header />
               <ContentDispenser
-                label="more..."
-                content={<MoreInfo />}
+                label={mainClass.includes('resume')?"Print":"more..."}
+                content={mainClass.includes('resume')?<PrintInfo />:<MoreInfo />}
                 cssClass="more-info"
               />
             </div>

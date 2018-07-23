@@ -36,6 +36,11 @@ let Header = (props) => {
             Work
           </Link>
         </li>
+        <li className={(props.headerClass.includes('resume'))?'active':''}>
+          <Link to="/resume" onClick={()=>handleClick('content-page resume')}>
+            Resume
+          </Link>
+        </li>
         <li className={(props.headerClass.includes('contact'))?'active':''}>
           <Link to="/contact" onClick={()=>handleClick('content-page contact')}>
             Contact

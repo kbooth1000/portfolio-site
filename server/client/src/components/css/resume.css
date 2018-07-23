@@ -115,3 +115,9 @@ ul {
   opacity: 1;
   
 }
+
+@media print {
+  .content-dispenser, .footer {
+    display: none;
+  }
+}
