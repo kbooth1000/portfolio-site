@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class PrintInfo extends Component {
   render() {
     return (
-      <div className="contact-content dispenser-inner">
+      <div className="resume-print-button">
         <a onClick={()=>window.print()} href="#">
           print
         </a>
