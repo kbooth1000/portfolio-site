@@ -13,7 +13,7 @@ export default (props) => {
          <span>back</span>
         </Link>
      <h1>
-       <b>Kyle Booth</b> Full-Stack Web Developer</h1>
+       <b>Kyle Booth,</b> <span className="logo-title">Full-Stack Web Developer</span></h1>
      <div id="links">
        <ul>
          <li>
@@ -64,38 +64,37 @@ export default (props) => {
      </div>
      <div id="experience-container">
        <h2 className="experience-header">Relevant Experience:</h2>
-       <section className="experience-columns">
-         <div className="column">
-           <div className="experience">
+
+
+       <div className="experience">
              <h3>
                <span className="company">Digital Crafts Coding Bootcamp</span> --
                <span className="location">Atlanta, GA</span>
              </h3>
              <h3 className="description">16-week immersive full-time accelerated learning program</h3>
-             <p>
-               <span className="dates">January-May 2018</span>
-               <br />
-             </p><ul className="highlights">
+             <p className="dates">January-May 2018</p>
+             <ul className="highlights">
                <li>Learned Full-Stack JavaScript, including React/ Redux, Node.js, Express, HTML/CSS, PostgreSQL Recent projects
                  include:
                  <ul>
                    <li>Digicaching: A virtual geocaching app that lets users collect, combine, and cache digital treasures to complete
-                     collections https://github.com/BGamber/digicaching</li>
-                   <li>Foodstash: A platform for storing, sharing, and iterating on recipes https://github.com/rcackerley/foodstash</li>
-                   <li>Town Square: A video-only discussion thread forum https://github.com/janelleany/Town-Square</li>
+                     collections (<a href="https://github.com/BGamber/digicaching">github.com/BGamber/digicaching</a>)</li>
+                   <li>Foodstash: A platform for storing, sharing, and iterating on recipes (<a href="https://github.com/rcackerley/foodstash">github.com/rcackerley/foodstash</a>)</li>
+                   <li>Town Square: A video-only discussion thread forum (<a href="https://github.com/janelleany/Town-Square">github.com/janelleany/Town-Square</a>)</li>
                  </ul>
                </li>
              </ul>
-             <p />
            </div>
+
+
+       <section className="experience-columns">
+         <div className="column">
+           
            <div className="experience">
              <h3>
                <span className="company">Freelance Web Designer/Front-End Developer</span> --
              </h3>
-             <p>
-               <span className="dates">2013-present</span>
-               <br />
-             </p><ul className="highlights">
+             <p className="dates">2013-present</p><ul className="highlights">
                <li>Design and build custom websites, mostly on WordPress (see boothwebproduction.com). Recent projects include:
                  <ul>
                    <li>Dark Horse Woodworks</li>
@@ -105,16 +104,14 @@ export default (props) => {
                  </ul>
                </li>
              </ul>
-             <p />
            </div>
            <div className="experience">
              <h3>
-               <span className="company">Anderson Press Inc.</span> --
-               <span className="location">Atlanta, GA</span>
+               <span className="company">Anderson Press Inc.</span>
+               <span className="location"> -- Atlanta, GA</span>
              </h3>
              <h3 className="job-title">Web Designer/Front-End Developer</h3>
-             <p>
-               <span className="dates">April 2006-May 2013</span>
+             <p className="dates">April 2006-May 2013
              </p><ul className="highlights">
                <li>Worked with an awesome team of designers and coders, coding and designing websites, applications and interactive
                  features for all the company’s properties, including:
@@ -126,7 +123,6 @@ export default (props) => {
                  </ul>
                </li>
              </ul>
-             <p />
            </div>
          </div>
          <div className="column">
@@ -136,14 +132,10 @@ export default (props) => {
                <span className="location">Ogden, UT</span>
              </h3>
              <h3 className="job-title">Online Managing News Editor</h3>
-             <p>
-               <span className="dates">June 2003-January 2006</span>
-               <br />
-             </p><ul className="highlights">
+             <p className="dates">June 2003-January 2006</p><ul className="highlights">
                <li>Responsible for daily publication of the newspaper’s website (html and pdf editions) </li>
                <li>Produced original audio, video and photo news features, including interactive web animations, etc.</li>
              </ul>
-             <p />
            </div>
            <div className="experience">
              <h3>
@@ -151,10 +143,7 @@ export default (props) => {
                <span className="location">New York City</span>
              </h3>
              <h3 className="job-title">Website Managing Editor</h3>
-             <p>
-               <span className="dates">February 2000-March 2001</span>
-               <br />
-             </p><ul className="highlights">
+             <p className="dates">February 2000-March 2001</p><ul className="highlights">
                <li>Responsible for all aspects of the website, including content, design and maintenance</li>
                <li>Managed a small team of web editors, designers and writers and collaborated regularly with other departments
                  on web projects
@@ -163,7 +152,6 @@ export default (props) => {
                  the site
                </li>
              </ul>
-             <p />
            </div>
          </div>
        </section>

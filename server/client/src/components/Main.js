@@ -55,11 +55,19 @@ class Main extends Component {
             <div className="c c4">4</div>
             <div className="c c5">
               <Header />
+              {mainClass.includes('resume')?
+              <PrintInfo style={{marginTop: '1.1rem',
+  display: 'block',
+  width: 'auto',
+  height: '1rem',
+  overflow: 'hidden',
+  transition: '.5s 2.1s'}} /> : 
               <ContentDispenser
-                label={mainClass.includes('resume')?"Print":"more..."}
-                content={mainClass.includes('resume')?<PrintInfo />:<MoreInfo />}
+                label="more..."
+                content={<MoreInfo />}
                 cssClass="more-info"
-              />
+              /> 
+              }
             </div>
             <div className="c c6">6</div>
           </div>
@@ -67,18 +75,17 @@ class Main extends Component {
             <div className="content-block">
               <div className="content-flex">
                 <div className="c c7">
-                  <About />
+                <Route exact path="/about" component={About} />
+
                 </div>
                 <div className="c c8">
-                  <Switch>
-                    <Route exact path="/about" component={About} />
-                    <Route exact path="/contact" component={Contact} />
+                  <Switch>                    
                     <Route path="/project" component={Project} />
                     <Route exact path="/projects" component={Projects} />
                   </Switch>
                 </div>
                 <div className="c c9">
-                  <Contact />
+                  <Route exact path="/contact" component={Contact} />
                 </div>
               </div>
             </div>
