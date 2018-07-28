@@ -76,6 +76,7 @@ a {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
+  -webkit-transition: all 1s;
 }
 
 .landing-screen .header {
@@ -101,7 +102,22 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.42rem;
   margin: 0;
+
+  background: -webkit-linear-gradient(top, #043e64 0%,#0c3556 10%,#122d48 25%,#0e2c4c 37%,#0b2d51 50%,#0c2844 51%,#0a3e58 83%,#035867 100%);
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
+
+.content-page .header .logo:hover  h1{
+  background: -webkit-linear-gradient(bottom, #097fcd 0%,#196db1 10%,#245b92 25%,#1e5b9c 37%,#165ca6 50%,#18528c 51%,#147fb4 83%,#06b3d2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1.5s;  
+}
+
 .header .logo h2 {
   font-size: 1.2rem;
   line-height: 1.75rem;
@@ -110,6 +126,9 @@ a {
   margin: 0.6rem 0;
   font-weight: 100;
   font-family: Lato;
+}
+.content-page .header .logo:hover h2 {
+  color: #559;
 }
 
 .footer {
