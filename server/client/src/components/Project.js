@@ -30,7 +30,10 @@ if(!project) {
       </div>
       
       <div className="content-box">
-        <img src={pic} alt="" className="project-img-main" /><br />
+        if(!pic){ <div className="loader">•••••</div> } else {
+        <img src={pic} alt="" className="project-img-main" />
+        }
+        <br />
       <div className="project-description"><p dangerouslySetInnerHTML = { {__html: sanitizeHtml(project.description)} }></p></div>
       </div>
     </div>

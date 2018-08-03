@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 import { setHeaderClass} from '../actions/actions';
 import { connect } from 'react-redux';
 
+library.add(fab, faCheckSquare);
 
 let About = (props) => {
 
@@ -13,9 +19,9 @@ let About = (props) => {
   return (
     <div style={{ width:"80%", textAlign:"center", maxWidth:"750px" }}>
     <p>
-    Hello, my name is Kyle Booth. I am an Atlanta-based web developer and designer working with mostly JavaScript-based front and backend technologies (and some PHP for Wordpress theme development). 
+    Hello, my name is Kyle Booth. I am an Atlanta-based web developer and designer working with mostly JavaScript-based Front and Back-End technologies (and some PHP for Wordpress theme development). 
     </p><p>
-    I've been working with JavaScript, HTML and CSS for over 10 years and recently graduated from a super-intense full-time coding bootcamp (<a href="https://www.digitalcrafts.com/immersive-web.html" target="_new">Digital Crafts full-time immersive</a>), where I ramped up my ES6, React, Node, et al skills.
+    I've been working with JavaScript, HTML and CSS for over 10 years and recently graduated from a super-intense full-time coding bootcamp (<a href="https://www.digitalcrafts.com/immersive-web.html" target="_new">Digital Crafts Full-Stack Immersive</a>), where I ramped up my <FontAwesomeIcon icon={['fab', 'js-square']} style={{color: '#ffc000'}} />ES6, <FontAwesomeIcon icon={['fab', 'react']} style={{color: 'blue'}} />React, <FontAwesomeIcon icon={['fab', 'node-js']} style={{color: 'green'}} />Node, et al skills.
     </p><p>
     Now, as I continue to dig deeper into these awesome technologies, I'm looking for a company to work with where I can help them build great stuff!
     </p><p>
