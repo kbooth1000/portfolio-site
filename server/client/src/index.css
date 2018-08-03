@@ -8,6 +8,8 @@ body {
   box-sizing: border-box;
   color: #444;
   font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.53rem;
 }
 
 a {
@@ -92,7 +94,8 @@ a {
   transform: scale(1);
   justify-content: center;
   white-space: nowrap;
-  transform-origin: 0;
+  transform-origin: center;
+  transform: scale(1.5);
 }
 
 .header .logo h1 {
@@ -446,5 +449,13 @@ a {
   .landing-screen .header .logo {
     transform: scale(0.8);
     transform-origin: center;
+  }
+}
+
+
+@media print {
+  body {
+    line-height: 1.1rem;
+    font-size: 15px;
   }
 }
