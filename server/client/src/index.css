@@ -15,6 +15,27 @@ body {
 a {
   text-decoration: none;
   color: #444;
+  padding: 0.1rem 0.2rem;
+}
+a:hover {
+  border-bottom: 2px solid rgb(223, 223, 223);
+    background: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 0.1rem 0.2rem;
+}
+
+.projectBox a:hover {
+  border: none;
+}
+
+.logo a:hover {
+  padding: 0.1rem 0.2rem
+}
+
+.header a:hover {
+  /* padding: 1px 5px 0; */
+  background: transparent;
+  border: 0;
 }
 
 .transition-3 {
@@ -366,6 +387,62 @@ a {
   height: 100%;
   flex: 1;
   opacity: 1;
+}
+
+.project-techs-buttons h3 {
+  margin: 0;
+    font-size: 1.1rem;
+}
+
+.project-techs-buttons button {
+  border: 0;
+    padding: .2rem 1rem;
+    font-size: 13px;
+    background: transparent;
+}
+
+.project-techs-buttons button::before {
+  content: '';
+  border-radius: 100%;
+  background: #ccc;
+  width: .8rem;
+  height: .8rem;
+  display: inline-block;
+  margin: .2rem;
+  padding: 0;
+  transition: .3s;
+  transform: translateY(.3rem);
+}
+
+.project-techs-buttons button:hover::before {
+  content: '';
+  border-radius: 100%;
+  background: #ccc;
+  width: .8rem;
+  height: .8rem;
+  display: inline-block;
+  margin: .1rem;
+  padding: .1rem;
+}
+
+.project-techs-buttons button:focus::before {
+  content: '';
+  border-radius: 100%;
+  background: #888;
+  width: .8rem;
+  height: .8rem;
+  display: inline-block;
+  margin: .1rem;
+  padding: .1rem;
+}
+
+.project-techs-buttons button:hover {
+  color: #222;
+  cursor: pointer;
+}
+
+.project-techs-buttons button:focus {
+  outline: 0;
 }
 
 /* PAGE-9   */

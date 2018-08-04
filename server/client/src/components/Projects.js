@@ -29,11 +29,11 @@ class Projects extends Component {
       require.context('./images/projectImages', false, /\.(png|jpe?g|svg)$/)
     );
 
-    let projectTechsButtons = Object.keys(techs).map(skill => (
+    let ProjectTechsButton = Object.keys(techs).map(skill => (
       <button key={skill} onClick={()=>this.chooseTech(skill)}>{techs[skill]}</button>
     ))
 
-    let projectsList = projectsObject.projects.map(project => {
+    let ProjectsList = projectsObject.projects.map(project => {
       let pic = imagepaths.find(path => path.includes(project.key));
       return (
         <li
@@ -55,11 +55,10 @@ class Projects extends Component {
     return (
       <div className="Projects">
         <div className="project-techs-buttons">
-          technologies used:<br/>
-          {projectTechsButtons}
+          <h3> technologies used:</h3>
+          {ProjectTechsButton}
         </div>
-        <ul className="projects-list">{projectsList}</ul>
-        {/* <div className="sky"></div> */}
+        <ul className="projects-list">{ProjectsList}</ul>
       </div>
     );
   }

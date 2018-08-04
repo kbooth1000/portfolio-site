@@ -24,6 +24,7 @@
   display: block;
   transform: translateY(-130%);
   transition: .5s .1s;
+  background: #fff;
 }
 
 .content-dispenser:hover div.dispenser-inner {
