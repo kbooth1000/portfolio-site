@@ -1,6 +1,11 @@
 @import url(/css/fonts.css);
 
+html {
+  box-sizing: border-box;
+}
+
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -16,12 +21,11 @@ a {
   text-decoration: none;
   color: #444;
   padding: 0.1rem 0.2rem;
+  border-radius: 5px;
 }
 a:hover {
   border-bottom: 2px solid rgb(223, 223, 223);
     background: rgb(241, 241, 241);
-    border-radius: 5px;
-    padding: 0.1rem 0.2rem;
 }
 
 .projectBox a:hover {
@@ -99,7 +103,7 @@ a:hover {
   -webkit-transform-origin: center;
   -ms-transform-origin: center;
   transform-origin: center;
-  -webkit-transition: all 1s;
+  /* -webkit-transition: all 1s; */
 }
 
 .landing-screen .header {
@@ -110,13 +114,12 @@ a:hover {
   width: auto;
   height: auto;
   text-align: center;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
   justify-content: center;
   white-space: nowrap;
   transform-origin: center;
-  transform: scale(1.5);
 }
 
 .header .logo h1 {
@@ -357,6 +360,13 @@ a {
 .resume .c3 {
   flex: 1;
   height: 100%;
+}
+
+.back-button {
+  width: 4rem;
+}
+.back-button:hover {
+  margin-bottom: -2px;
 }
 
 /* PAGE-7 (about)   */
