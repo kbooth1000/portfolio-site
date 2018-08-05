@@ -532,6 +532,13 @@ a {
   color: #333;
 }
 
+@media screen and (max-width: 485px) {
+  .landing-screen .header .logo {
+    transform: scale(1.2);
+    transform-origin: center;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .landing-screen .header .logo {
     transform: scale(0.8);

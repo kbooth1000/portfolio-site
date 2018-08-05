@@ -1,0 +1,330 @@
+.squirrel {
+  width: 10rem;
+  background-repeat: no-repeat;
+  background-position: left top;
+  height: 3.5rem;
+  background-size: 12rem;
+  position: relative;
+  margin-bottom: -1.15rem;
+  z-index: 99;
+  margin-left: -16rem;
+  transform: scaleX(-1);
+}
+
+@keyframes animatedSquirrel {
+  from {
+    background-position: left top;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+@-moz-keyframes animatedSquirrel {
+  from {
+    background-position: left top;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+@-webkit-keyframes animatedSquirrel {
+  from {
+    background-position: left top;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+
+@keyframes animatedSquirrel2 {
+  0% {
+    background-position: left top;
+    transform: scaleX(-1);
+    margin-left: -17rem;
+  }
+  14% {
+    transform: scaleX(-1);
+    margin-left: -17rem;
+  }
+  60% {
+    transform: scaleX(-1);
+    margin-left: -29rem;
+  }
+  100% {
+    background-position: left bottom;
+    transform: scaleX(1);
+    margin-left: -22rem;
+  }
+}
+@-moz-keyframes animatedSquirrel2 {
+  0% {
+    background-position: left top;
+    transform: scaleX(-1);
+    margin-left: -17rem;
+  }
+  14% {
+    transform: scaleX(-1);
+    margin-left: -17rem;
+  }
+  60% {
+    transform: scaleX(-1);
+    margin-left: -29rem;
+  }
+  100% {
+    background-position: left bottom;
+    transform: scaleX(1);
+    margin-left: -22rem;
+  }
+}
+@-webkit-keyframes animatedSquirrel2 {
+  0% {
+    background-position: left top;
+    transform: scaleX(-1);
+    margin-left: -17rem;
+  }
+  14% {
+    transform: scaleX(-1);
+    margin-left: -17rem;
+  }
+  60% {
+    transform: scaleX(-1);
+    margin-left: -29rem;
+  }
+  100% {
+    background-position: left bottom;
+    transform: scaleX(1);
+    margin-left: -22rem;
+  }
+}
+@keyframes animatedSquirrel3 {
+  from {
+    background-position: left top;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+@-moz-keyframes animatedSquirrel3 {
+  from {
+    background-position: left top;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+@-webkit-keyframes animatedSquirrel3 {
+  from {
+    background-position: left top;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+
+.squirrel-ani,
+.squirrel-ani2,
+.squirrel-ani3,
+.squirrel-ani4 {
+  overflow: hidden;
+  animation: animatedSquirrel 1s steps(9) 1;
+  -webkit-animation: animatedSquirrel 1s steps(9) 1;
+  -ms-animation: animatedSquirrel 1s steps(9) 1;
+  -moz-animation: animatedSquirrel 1s steps(9) 1;
+  -webkit-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
+  padding-top: 0;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-direction: normal;
+
+  background-size: 67px;
+}
+.squirrel-ani:hover {
+  transform: rotate(-3deg);
+  padding-top: 2px;
+}
+.squirrel-ani2 {
+  animation: animatedSquirrel2 1s 2s steps(9) 1;
+  -webkit-animation: animatedSquirrel2 1s 2s steps(9) 1;
+  -ms-animation: animatedSquirrel2 1s 2s steps(9) 1;
+  -moz-animation: animatedSquirrel2 1s 2s steps(9) 1;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  /* transform: scaleX(-1); */
+  animation-direction: normal;
+}
+.squirrel-ani3 {
+  animation: animatedSquirrel3 1s steps(9) 1;
+  -webkit-animation: animatedSquirrel3 1s steps(9) 1;
+  -ms-animation: animatedSquirrel3 1s steps(9) 1;
+  -moz-animation: animatedSquirrel3 1s steps(9) 1;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-direction: normal;
+  transform: scaleX(-1);
+}
+.squirrel-ani4,
+.content-page .squirrel {
+  animation: animatedSquirrel3 1s steps(9) 1;
+  -webkit-animation: animatedSquirrel3 1s steps(9) 1;
+  -ms-animation: animatedSquirrel3 1s steps(9) 1;
+  -moz-animation: animatedSquirrel3 1s steps(9) 1;
+  /* animation-delay: .5s; */
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-direction: normal;
+  transform: scaleX(-0.5) scaleY(0.5);
+}
+
+.content-page .squirrel {
+  opacity: 0;
+  display: none;
+}
+
+
+@media screen and (max-width: 485px) {
+  .squirrel {
+    margin-bottom: -1.74rem;
+    margin-left: -13rem;
+  }
+  @keyframes animatedSquirrel2 {
+    0% {
+      background-position: left top;
+      transform: scaleX(-1);
+      margin-left: -13rem;
+    }
+    14% {
+      transform: scaleX(-1);
+      margin-left: -13rem;
+    }
+    60% {
+      transform: scaleX(-1);
+      margin-left: -24rem;
+    }
+    100% {
+      background-position: left bottom;
+      transform: scaleX(1);
+      margin-left: -17rem;
+    }
+  }
+  @-moz-keyframes animatedSquirrel2 {
+    0% {
+      background-position: left top;
+      transform: scaleX(-1);
+      margin-left: -13rem;
+    }
+    14% {
+      transform: scaleX(-1);
+      margin-left: -13rem;
+    }
+    60% {
+      transform: scaleX(-1);
+      margin-left: -24rem;
+    }
+    100% {
+      background-position: left bottom;
+      transform: scaleX(1);
+      margin-left: -17rem;
+    }
+  }
+  @-webkit-keyframes animatedSquirrel2 {
+    0% {
+      background-position: left top;
+      transform: scaleX(-1);
+      margin-left: -13rem;
+    }
+    14% {
+      transform: scaleX(-1);
+      margin-left: -13rem;
+    }
+    60% {
+      transform: scaleX(-1);
+      margin-left: -24rem;
+    }
+    100% {
+      background-position: left bottom;
+      transform: scaleX(1);
+      margin-left: -17rem;
+    }
+  }
+}
+
+/*    max-width: 400px      */
+@media screen and (max-width: 400px) {
+  .squirrel {
+    margin-bottom: -2.71rem;
+    margin-left: -9.6rem;
+    transform: scaleX(-.7) scaleY(.7);
+  }
+  @keyframes animatedSquirrel2 {
+    0% {
+      background-position: left top;
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -9.6rem;
+    }
+    14% {
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -9.6rem;
+    }
+    60% {
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -16rem;
+    }
+    100% {
+      background-position: left bottom;
+      transform: scaleX(.7) scaleY(.7);
+      margin-left: -11rem;
+    }
+  }
+  @-moz-keyframes animatedSquirrel2 {
+    0% {
+      background-position: left top;
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -9.6rem;
+    }
+    14% {
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -9.6rem;
+    }
+    60% {
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -16rem;
+    }
+    100% {
+      background-position: left bottom;
+      transform: scaleX(.7) scaleY(.7);
+      margin-left: -11rem;
+    }
+  }
+  @-webkit-keyframes animatedSquirrel2 {
+    0% {
+      background-position: left top;
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -9.6rem;
+    }
+    14% {
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -9.6rem;
+    }
+    60% {
+      transform: scaleX(-.7) scaleY(.7);
+      margin-left: -16rem;
+    }
+    100% {
+      background-position: left bottom;
+      transform: scaleX(.7) scaleY(.7);
+      margin-left: -11rem;
+    }
+  }
+}
