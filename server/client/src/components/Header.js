@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { setHeaderClass} from '../actions/actions';
 
+
 let Logo = () => {
   return (
     <div className="logo">

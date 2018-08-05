@@ -11,6 +11,7 @@ import MoreInfo from './MoreInfo';
 import PrintInfo from './PrintInfo';
 import Contact from './Contact';
 import Resume from './Resume';
+import Squirrel from './Squirrel';
 import './css/fonts.css';
 
 class Main extends Component {
@@ -54,6 +55,7 @@ class Main extends Component {
           <div className="row r2">
             <div className="c c4">4</div>
             <div className="c c5">
+            <Squirrel />
               <Header />
               {mainClass.includes('resume')?
               <PrintInfo style={{marginTop: '1.1rem',
