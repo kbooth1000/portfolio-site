@@ -133,10 +133,12 @@ export default (props) => {
                <span className="location">Ogden, UT</span>
              </h3>
              <h3 className="job-title">Online Managing News Editor</h3>
-             <p className="dates">June 2003-January 2006</p><ul className="highlights">
+             <p className="dates">June 2003-January 2006</p><ul className="highlights"><li>
+               <ul>
                <li>Responsible for daily publication of the newspaper’s website (html and pdf editions) </li>
                <li>Produced original audio, video and photo news features, including interactive web animations, etc.</li>
              </ul>
+             </li></ul>
            </div>
            <div className="experience">
              <h3>
