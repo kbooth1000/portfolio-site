@@ -47,15 +47,16 @@ export default (props) => {
      <div id="skills">
        <h2>Skills:</h2>
        <ul>
-         <li className="skill">React/Redux</li>
+         <li className="skill">React / Redux</li>
          <li className="skill">JavaScript</li>
          <li className="skill">Node.js</li>
          <li className="skill">PostgreSQL</li>
          <li className="skill">MongoDB</li>
          <li className="skill">Express</li>
          <li className="skill">Wordpress</li>
-         <li className="skill">Git/Github</li>
-         <li className="skill">HTML5/CSS3</li>
+         <li className="skill">Git / Github</li>
+         <li className="skill">TDD: Jasmine / assert</li>
+         <li className="skill">HTML5 / CSS3</li>
          <li className="skill">Responsive web design</li>
          <li className="skill">Photoshop</li>
          <li className="skill">Illustrator</li>
