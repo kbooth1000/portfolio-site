@@ -10,35 +10,49 @@ class Projects extends Component {
     super();
     this.state = {
       chosenTech: 'all'
-    }
+    };
   }
 
   handleClick = projectkey => {
     this.setMainClass(projectkey);
   };
 
-  chooseTech = skill => this.setState({chosenTech:skill});
+  chooseTech = skill => this.setState({ chosenTech: skill });
 
   render() {
-    let {chosenTech} = this.state;
+    let { chosenTech } = this.state;
     let techs = {
-      all:'view all', react:'ReactJS', node:'Node.js', js:'JavaScript', html:'HTML5/CSS3', wp:'Wordpress', php:'PHP'
-    }
+      all: 'view all',
+      react: 'ReactJS',
+      node: 'Node.js',
+      js: 'JavaScript',
+      html: 'HTML5/CSS3',
+      wp: 'Wordpress',
+      php: 'PHP'
+    };
     let importAll = r => r.keys().map(r);
     let imagepaths = importAll(
-      require.context('./images/projectImages', false, /\.(png|jpe?g|svg)$/)
+      require.context('./images/projectImages', false, /\.(png|jpe?g|svg|gif)$/)
     );
 
     let ProjectTechsButton = Object.keys(techs).map(skill => (
-      <button key={skill} onClick={()=>this.chooseTech(skill)}>{techs[skill]}</button>
-    ))
+      <button key={skill} onClick={() => this.chooseTech(skill)}>
+        {techs[skill]}
+      </button>
+    ));
 
     let ProjectsList = projectsObject.projects.map(project => {
       let pic = imagepaths.find(path => path.includes(project.key));
       return (
         <li
           key={project.key}
-          className={'projectBox ' + ((project.tech.includes(chosenTech)||chosenTech==='all')?'project-open ':'') + project.key}
+          className={
+            'projectBox ' +
+            (project.tech.includes(chosenTech) || chosenTech === 'all'
+              ? 'project-open '
+              : '') +
+            project.key
+          }
         >
           <Link
             to={`/project/${project.key}`}
@@ -46,7 +60,11 @@ class Projects extends Component {
           >
             <img src={pic} alt={project.title} className="projectThumbnail" />
             <div className="project-thumb-title">{project.title}</div>
-            <div className="project-thumb-techs">{project.tech.map(skill=>(<span key={skill}>{techs[skill]}</span>))}</div>
+            <div className="project-thumb-techs">
+              {project.tech.map(skill => (
+                <span key={skill}>{techs[skill]}</span>
+              ))}
+            </div>
           </Link>
         </li>
       );
