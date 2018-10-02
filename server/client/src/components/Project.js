@@ -16,7 +16,7 @@ let Project = props => {
   }
   let importAll = r => r.keys().map(r);
   let imagepaths = importAll(
-    require.context('./images/projectImages', false, /\.(png|jpe?g|svg)$/)
+    require.context('./images/projectImages', false, /\.(png|jpe?g|svg|gif)$/)
   );
   let pic = imagepaths.find(path => path.includes(project.key));
 

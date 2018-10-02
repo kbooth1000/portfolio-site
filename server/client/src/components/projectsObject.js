@@ -66,18 +66,11 @@ I'm using it as a playground to test out various experiments, such as svg animat
     },
     {
       key: 'headlight-logic',
-      title: 'Headlight Logic',
+      title: 'Headlights 101',
       tech: ['wp', 'php', 'html'],
       order: 7,
-      description: `<p>Headlight Logic needed a place where customers could learn about and directly order their services online.</p>
-      <p>I designed and built <a href="http://headlightlogic.com">this website/web app</a> for them.</p>`
-    },
-    {
-      key: 'dimensionworks',
-      title: 'DimensionWorks',
-      tech: ['wp', 'php', 'html'],
-      order: 8,
-      description: `<p>Designed and built this concept-to-completion construction company’s <a href="http://www.dimensionworks.com/dw/" target="_blank">website</a>.</p>`
+      description: `<p>Headlights101 needed a place where customers could learn about and directly order their services online.</p>
+      <p>I designed and built <a href="http://headlights101.com">this website/web app</a> for them.</p>`
     }
   ],
   get: function(id) {
