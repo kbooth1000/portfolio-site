@@ -1,9 +1,20 @@
 let projectsObject = {
   projects: [
     {
+      key: 'experiments',
+      title: 'Experiment Showcase',
+      order: 1,
+      tech: ['react', 'html', 'js'],
+      description: `<p>This is a one-page React app interface that I built. The interaction is based on the idea behind css image sprites (alistapart.com/article/sprites), but with "page" React components instead of images. It seems like an idea that could have a lot of applications and variations. 
+</p><p>
+I'm using it as a playground to test out various experiments, such as svg animations. The idea is it will be an infinite work in progress and springboard for other projects, with hopefully some interesting ideas and things to look at.</p>
+		<p>Here’s the <a href="https://github.com/kbooth1000/page-sprite-react-interface" target="_blank" rel="noopener">github repo</a>.<br>
+		And here’s the current live version: <a href="https://kjb-experiments.herokuapp.com/" target="_blank" rel="noopener">the live app</a>.</p>`
+    },
+    {
       key: 'digicaching',
       title: 'Digicaching React/Node App',
-      order: 1,
+      order: 2,
       tech: ['react', 'node', 'html', 'js'],
       description: `<p>This was a project that I and three other developers did over the course of two weeks. We used ReactJS with Redux for the frontend and NodeJS with PostgreSQL on the backend.</p>
 		<p>Here’s the <a href="https://github.com/BGamber/digicaching/" target="_blank" rel="noopener">github repo</a>.<br>
@@ -70,7 +81,7 @@ let projectsObject = {
     }
   ],
   get: function(id) {
-    return this.projects.find( p => p.key === id);
+    return this.projects.find(p => p.key === id);
   }
 };
 
