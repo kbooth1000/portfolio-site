@@ -62,7 +62,9 @@ I'm using it as a playground to test out various experiments, such as svg animat
       title: 'Wheeldesks',
       tech: ['wp', 'php', 'html'],
       order: 6,
-      description: ``
+      description: `This small company produces an awesome product and needed an awesome website from which to sell it!
+
+I designed and built <a href="https://www.wheeldesks.com/how-to-use-the-wheeldesk/" class="project-image" target="_blank"this website.`
     },
     {
       key: 'headlight-logic',
