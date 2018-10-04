@@ -8,8 +8,8 @@ let projectsObject = {
       description: `<p>This is a one-page React app interface that I built. The interaction is based on the idea behind css image sprites (alistapart.com/article/sprites), but with "page" React components instead of images. It seems like an idea that could have a lot of applications and variations. 
 </p><p>
 I'm using it as a playground to test out various experiments, such as svg animations. The idea is it will be an infinite work in progress and springboard for other projects, with hopefully some interesting ideas and things to look at.</p>
-		<p>Here’s the <a href="https://github.com/kbooth1000/page-sprite-react-interface" target="_blank" rel="noopener">github repo</a>.<br>
-		And here’s the current live version: <a href="https://kjb-experiments.herokuapp.com/" target="_blank" rel="noopener">the live app</a>.</p>`
+		<p>Here’s the <a  class="project-image" href="https://github.com/kbooth1000/page-sprite-react-interface" target="_blank" rel="noopener">github repo</a>.<br>
+		And here’s the current live version: <a class="project-image"  href="https://kjb-experiments.herokuapp.com/" target="_blank" rel="noopener">the live app</a>.</p>`
     },
     {
       key: 'digicaching',
@@ -17,7 +17,7 @@ I'm using it as a playground to test out various experiments, such as svg animat
       order: 2,
       tech: ['react', 'node', 'html', 'js'],
       description: `<p>This was a project that I and three other developers did over the course of two weeks. We used ReactJS with Redux for the frontend and NodeJS with PostgreSQL on the backend.</p>
-		<p>Here’s the <a href="https://github.com/BGamber/digicaching/" target="_blank" rel="noopener">github repo</a>.<br>
+		<p>Here’s the <a  class="project-image"  href="https://github.com/BGamber/digicaching/" target="_blank" rel="noopener">github repo</a>.<br>
 		And here’s the current version of <a href="https://digicaching.herokuapp.com/" target="_blank" rel="noopener">the live app</a>. (We plan on continuing to improve it.)</p>
 		<p>We built this app mostly to practice and improve our full-stack developing skills.</p>`
     },
@@ -37,7 +37,7 @@ I'm using it as a playground to test out various experiments, such as svg animat
 
       I designed and built this site for them using a highly customized WordPress theme, into which I integrated theatre-specific data input fields and displays, such as showtimes, dates, prices, postcard images, etc.
       
-      <a class="project-image" href="http://www.boothwebproduction.com/clients/theatreinthesquare/">This</a> is what the site looked like when I turned it over to them.`
+      <a class="project-image" href="http://www.boothwebproduction.com/clients/theatreinthesquare/" target="_blank">This</a> is what the site looked like when I turned it over to them.`
     },
     {
       key: 'the-naked-crepe',
@@ -46,7 +46,7 @@ I'm using it as a playground to test out various experiments, such as svg animat
       order: 4,
       description: `This small upstart catering business needed a website that was clean and elegant, while still being personal and inviting.
 
-      I designed and built this website for them.`
+      I designed and built <a href="http://www.thenakedcrepe.com/tnc2a/" target="_blank">this website</a> for them.`
     },
     {
       key: 'whitman-publishing',
@@ -70,7 +70,7 @@ I'm using it as a playground to test out various experiments, such as svg animat
       tech: ['wp', 'php', 'html'],
       order: 7,
       description: `<p>Headlights101 needed a place where customers could learn about and directly order their services online.</p>
-      <p>I designed and built <a href="http://headlights101.com">this website/web app</a> for them.</p>`
+      <p>I designed and built <a  class="project-image"  href="http://headlights101.com" target="_blank">this website</a> for them.</p>`
     }
   ],
   get: function(id) {
