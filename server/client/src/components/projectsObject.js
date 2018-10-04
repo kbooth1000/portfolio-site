@@ -35,9 +35,9 @@ I'm using it as a playground to test out various experiments, such as svg animat
       order: 3,
       description: `Marietta’s New Theatre in the Square had just been rescued from near abandonment by an enthusiastic new group of people who were struggling to bring life back to the venue. While the company put together its first new shows, they also needed to get the word out so that audience seats would be filled. They needed a website that would be professional, yet fun, invoking stability as well as change. It also needed to have a backend that would be simple enough for volunteer interns to update easily.
 
-      I designed and built this site for them using highly customized WordPress theme, into which I integrated theatre-specific data input fields and displays, such as showtimes, dates, prices, postcard images, etc.
+      I designed and built this site for them using a highly customized WordPress theme, into which I integrated theatre-specific data input fields and displays, such as showtimes, dates, prices, postcard images, etc.
       
-      This is what the site looked like when I turned it over to them.`
+      <a class="project-image" href="http://www.boothwebproduction.com/clients/theatreinthesquare/">This</a> is what the site looked like when I turned it over to them.`
     },
     {
       key: 'the-naked-crepe',
