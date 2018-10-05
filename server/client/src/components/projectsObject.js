@@ -64,7 +64,7 @@ I'm using it as a playground to test out various experiments, such as svg animat
       order: 6,
       description: `This small company produces an awesome product and needed an awesome website from which to sell it!
 
-I designed and built <a href="https://www.wheeldesks.com/how-to-use-the-wheeldesk/" class="project-image" target="_blank"this website.`
+I designed and built <a href="https://www.wheeldesks.com/how-to-use-the-wheeldesk/" class="project-image" target="_blank">this website</a>.`
     },
     {
       key: 'headlight-logic',
