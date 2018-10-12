@@ -17,7 +17,7 @@ export default props => {
       </Link>
       <h1>
         <b>Kyle Booth,</b>{' '}
-        <span className="logo-title">Full-Stack Web Developer</span>
+        <span className="logo-title">Front-End Web Developer</span>
       </h1>
       <div id="links">
         <ul>
