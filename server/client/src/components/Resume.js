@@ -81,17 +81,28 @@ export default props => {
 
         <div className="experience">
           <h3>
-            <span className="company">Digital Crafts Coding Bootcamp -- </span>
+            <span className="company">DigitalCrafts Coding Bootcamp -- </span>
             <span className="location">Atlanta, GA</span>
           </h3>
           <h3 className="description">
             16-week immersive full-time accelerated learning program
           </h3>
-          <p className="dates">January-May 2018</p>
+          <h3><span className="job-title">
+                 • Developer-in-Residence
+                </span><span className="dates" style={{fontSize: '14px'}}> (November 2018 - present)</span>
+                </h3>
+                <ul className="highlights"><li>
+                Assist DigitalCrafts bootcamp teacher and students as they learn Full-Stack JavaScript
+                </li></ul>
+                <h3><span className="job-title">
+                 • Student
+                </span><span className="dates" style={{fontSize: '14px'}}> (January-May 2018)</span>
+                </h3>
+          
           <ul className="highlights">
             <li>
               Learned Full-Stack JavaScript, including React/ Redux, Node.js,
-              Express, HTML/CSS, PostgreSQL Recent projects include:
+              Express, HTML/CSS, PostgreSQL • Projects include:
               <ul>
                 <li>
                   Digicaching: A virtual geocaching app that lets users collect,
@@ -127,7 +138,7 @@ export default props => {
                     <li>HTML5/CSS3</li>
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   Town Square: A video-only discussion thread forum (
                   <a href="https://github.com/janelleany/Town-Square">
                     github.com/janelleany/Town-Square
@@ -140,7 +151,7 @@ export default props => {
                     <li>ES6</li>
                     <li>HTML5/CSS3</li>
                   </ul>
-                </li>
+                </li> */}
               </ul>
             </li>
           </ul>
