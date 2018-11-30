@@ -202,6 +202,7 @@
 }
 
 @media print {
+
   .content-dispenser,
   .footer,
   .back-button,
@@ -209,14 +210,28 @@
     display: none;
   }
 
+  @page {
+    margin: 0;
+  }
+
+  body {
+    max-height: 90vh;
+    overflow: hidden;
+    background: #006
+  }
+
   .content-page .r3 {
     -ms-flex: 1 1;
     flex: 1 1;
   }
+  .resume {
+    max-height: 90vh;
+    overflow: hidden;
+  }
 
   .resume .c3 {
     padding: 0;
-    margin: 0;
+    margin: 2.3%;
     border: 4px #ddd solid;
     border-radius: 0 3.6rem 0 0;
     width: 8in;
