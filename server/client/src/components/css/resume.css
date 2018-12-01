@@ -212,10 +212,11 @@
 
   @page {
     margin: 0;
+    size: 8.2in 11in
   }
 
   body {
-    max-height: 90vh;
+    max-height: 11in;
     overflow: hidden;
     background: #006
   }
@@ -225,13 +226,12 @@
     flex: 1 1;
   }
   .resume {
-    max-height: 90vh;
     overflow: hidden;
   }
 
   .resume .c3 {
     padding: 0;
-    margin: 2.3%;
+    margin: 3% 2.3%;
     border: 4px #ddd solid;
     border-radius: 0 3.6rem 0 0;
     width: 8in;
