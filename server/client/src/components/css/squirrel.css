@@ -15,22 +15,27 @@
   from {
     background-position: left top;
   }
+
   to {
     background-position: left bottom;
   }
 }
+
 @-moz-keyframes animatedSquirrel {
   from {
     background-position: left top;
   }
+
   to {
     background-position: left bottom;
   }
 }
+
 @-webkit-keyframes animatedSquirrel {
   from {
     background-position: left top;
   }
+
   to {
     background-position: left bottom;
   }
@@ -42,80 +47,97 @@
     transform: scaleX(-1);
     margin-left: -17rem;
   }
+
   14% {
     transform: scaleX(-1);
     margin-left: -17rem;
   }
+
   60% {
     transform: scaleX(-1);
     margin-left: -29rem;
   }
+
   100% {
     background-position: left bottom;
     transform: scaleX(1);
     margin-left: -22rem;
   }
 }
+
 @-moz-keyframes animatedSquirrel2 {
   0% {
     background-position: left top;
     transform: scaleX(-1);
     margin-left: -17rem;
   }
+
   14% {
     transform: scaleX(-1);
     margin-left: -17rem;
   }
+
   60% {
     transform: scaleX(-1);
     margin-left: -29rem;
   }
+
   100% {
     background-position: left bottom;
     transform: scaleX(1);
     margin-left: -22rem;
   }
 }
+
 @-webkit-keyframes animatedSquirrel2 {
   0% {
     background-position: left top;
     transform: scaleX(-1);
     margin-left: -17rem;
   }
+
   14% {
     transform: scaleX(-1);
     margin-left: -17rem;
   }
+
   60% {
     transform: scaleX(-1);
     margin-left: -29rem;
   }
+
   100% {
     background-position: left bottom;
     transform: scaleX(1);
     margin-left: -22rem;
   }
 }
+
 @keyframes animatedSquirrel3 {
   from {
     background-position: left top;
   }
+
   to {
     background-position: left bottom;
   }
 }
+
 @-moz-keyframes animatedSquirrel3 {
   from {
     background-position: left top;
   }
+
   to {
     background-position: left bottom;
   }
 }
+
 @-webkit-keyframes animatedSquirrel3 {
   from {
     background-position: left top;
   }
+
   to {
     background-position: left bottom;
   }
@@ -142,10 +164,12 @@
 
   background-size: 67px;
 }
+
 .squirrel-ani:hover {
   transform: rotate(-3deg);
   padding-top: 2px;
 }
+
 .squirrel-ani2 {
   animation: animatedSquirrel2 1s 2s steps(9) 1;
   -webkit-animation: animatedSquirrel2 1s 2s steps(9) 1;
@@ -159,6 +183,7 @@
   /* transform: scaleX(-1); */
   animation-direction: normal;
 }
+
 .squirrel-ani3 {
   animation: animatedSquirrel3 1s steps(9) 1;
   -webkit-animation: animatedSquirrel3 1s steps(9) 1;
@@ -172,6 +197,7 @@
   animation-direction: normal;
   transform: scaleX(-1);
 }
+
 .squirrel-ani4,
 .content-page .squirrel {
   animation: animatedSquirrel3 1s steps(9) 1;
@@ -198,60 +224,72 @@
     margin-bottom: -1.74rem;
     margin-left: -13rem;
   }
+
   @keyframes animatedSquirrel2 {
     0% {
       background-position: left top;
       transform: scaleX(-1);
       margin-left: -13rem;
     }
+
     14% {
       transform: scaleX(-1);
       margin-left: -13rem;
     }
+
     60% {
       transform: scaleX(-1);
       margin-left: -24rem;
     }
+
     100% {
       background-position: left bottom;
       transform: scaleX(1);
       margin-left: -17rem;
     }
   }
+
   @-moz-keyframes animatedSquirrel2 {
     0% {
       background-position: left top;
       transform: scaleX(-1);
       margin-left: -13rem;
     }
+
     14% {
       transform: scaleX(-1);
       margin-left: -13rem;
     }
+
     60% {
       transform: scaleX(-1);
       margin-left: -24rem;
     }
+
     100% {
       background-position: left bottom;
       transform: scaleX(1);
       margin-left: -17rem;
     }
   }
+
   @-webkit-keyframes animatedSquirrel2 {
     0% {
       background-position: left top;
       transform: scaleX(-1);
       margin-left: -13rem;
     }
+
     14% {
       transform: scaleX(-1);
       margin-left: -13rem;
     }
+
     60% {
       transform: scaleX(-1);
       margin-left: -24rem;
     }
+
     100% {
       background-position: left bottom;
       transform: scaleX(1);
@@ -267,60 +305,72 @@
     margin-left: -9.6rem;
     transform: scaleX(-.7) scaleY(.7);
   }
+
   @keyframes animatedSquirrel2 {
     0% {
       background-position: left top;
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -9.6rem;
     }
+
     14% {
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -9.6rem;
     }
+
     60% {
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -16rem;
     }
+
     100% {
       background-position: left bottom;
       transform: scaleX(.7) scaleY(.7);
       margin-left: -11rem;
     }
   }
+
   @-moz-keyframes animatedSquirrel2 {
     0% {
       background-position: left top;
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -9.6rem;
     }
+
     14% {
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -9.6rem;
     }
+
     60% {
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -16rem;
     }
+
     100% {
       background-position: left bottom;
       transform: scaleX(.7) scaleY(.7);
       margin-left: -11rem;
     }
   }
+
   @-webkit-keyframes animatedSquirrel2 {
     0% {
       background-position: left top;
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -9.6rem;
     }
+
     14% {
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -9.6rem;
     }
+
     60% {
       transform: scaleX(-.7) scaleY(.7);
       margin-left: -16rem;
     }
+
     100% {
       background-position: left bottom;
       transform: scaleX(.7) scaleY(.7);
