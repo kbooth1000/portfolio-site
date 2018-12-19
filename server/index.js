@@ -8,11 +8,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-// app.get('/*', (req, res) => {
-//   res.redirect(
-//     '/'
-//   );
-// });
 
 app.post('/contact-form', (req, res) => {
   const { email = '', name = '', message = '' } = req.body;
