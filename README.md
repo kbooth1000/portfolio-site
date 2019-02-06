@@ -1,5 +1,5 @@
 # Portfolio
-[**### kylebooth.com**](http://www.kylebooth.com "Kyle Booth's Portfolio")
+[### kylebooth.com](http://www.kylebooth.com "Kyle Booth's Portfolio")
 
 <img src="https://github.com/kbooth1000/portfolio-site/blob/master/server/client/src/components/images/projectImages/screenshot-portfolio.png?raw=true" width="430" />
 
