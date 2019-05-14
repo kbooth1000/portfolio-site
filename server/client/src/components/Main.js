@@ -52,7 +52,10 @@ class Main extends Component {
               <Resume />
             </div>
           </div>
-          <div className="row r2">
+          <div className="row r2" style={{ width: 
+           mainClass.includes('resume') ? 
+            0 : '100%'
+            }}>
             <div className="c c4">4</div>
             <div className="c c5">
             <Squirrel />
@@ -73,7 +76,10 @@ class Main extends Component {
             </div>
             <div className="c c6">6</div>
           </div>
-          <div className="row r3">
+          <div className="row r3" style={{ width: 
+           mainClass.includes('resume') ? 
+            0 : '100%'
+            }}>
             <div className="content-block">
               <div className="content-flex">
                 <div className="c c7">

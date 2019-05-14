@@ -79,6 +79,38 @@ export default props => {
       <div id="experience-container">
         <h2 className="experience-header">Relevant Experience:</h2>
 
+<section className="experience-columns">
+          <div className="column">
+
+
+
+
+          <div className="experience">
+              <h3>
+                <span className="company">CDC (Centers for Disease Control and Prevention) through Northrop Grumman through Pennant Consulting</span>
+                <span className="location"> -- Atlanta, GA</span>
+              </h3>
+              <h3 className="job-title">Front-End Web Developer</h3>
+              <ul className="skills-used">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>D3js</li>
+                <li>PHP</li>
+                <li>Wordpress</li>
+              </ul>
+              <p className="dates">March 2019-present</p>
+
+              <ul className="highlights">
+                <li>
+                  Work as independent contractor on <a href='https://www.cdc.gov'>CDC.gov</a> with a great team of developers to code, squash bugs for and enhance the site.
+                </li>
+              </ul>
+            </div>
+
+
+        
+
+
         <div className="experience">
           <h3>
             <span className="company">DigitalCrafts Coding Bootcamp -- </span>
@@ -158,8 +190,7 @@ export default props => {
           </ul>
         </div>
 
-        <section className="experience-columns">
-          <div className="column">
+        
             <div className="experience">
               <h3>
                 <span className="job-title">
@@ -183,7 +214,13 @@ export default props => {
                 </li>
               </ul>
             </div>
-            <div className="experience">
+            
+          </div>
+          <div className="column">
+
+
+
+          <div className="experience">
               <h3>
                 <span className="company">Anderson Press Inc.</span>
                 <span className="location"> -- Atlanta, GA</span>
@@ -213,8 +250,9 @@ export default props => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="column">
+
+
+
             <div className="experience">
               <h3>
                 <span className="company">Standard-Examiner -- </span>
