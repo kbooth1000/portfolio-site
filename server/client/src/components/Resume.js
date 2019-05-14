@@ -89,12 +89,12 @@ export default props => {
           </h3>
           <h3><span className="job-title">
                  • Developer-in-Residence
-                </span><span className="dates" style={{fontSize: '14px'}}> (November 2018 - present)</span>
+                </span><span className="dates" style={{fontSize: '14px'}}> (November 2018 - March 2019)</span>
                 </h3>
                 <ul className="highlights"><li>
                 Instructed and mentored students as they learned full-stack JavaScript
                 </li>
-                <li>Assisted students one-on-one as needed in developing and debugging projects</li></ul>
+                <li>Pair-programmed with students in developing and debugging projects and assignments</li></ul>
                 <h3><span className="job-title">
                  • Student
                 </span><span className="dates" style={{fontSize: '14px'}}> (January-May 2018)</span>
