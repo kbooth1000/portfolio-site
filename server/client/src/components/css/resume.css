@@ -102,7 +102,8 @@
   padding: 5px 2px 0;
 }
 
-.resume a:hover {}
+.resume a:hover {
+}
 
 #links .text {
   margin: 0 0.2rem;
@@ -186,6 +187,7 @@
 
 .experience .location {
   font-weight: 300;
+  font-size: .9rem;
 }
 
 .experience .description {
@@ -197,13 +199,12 @@
   opacity: 1;
 }
 
-.experience .highlights ul>li {
+.experience .highlights ul > li {
   /* margin-left: 4rem;
   padding-left: 0; */
 }
 
 @media print {
-
   .content-dispenser,
   .footer,
   .back-button,
@@ -215,18 +216,35 @@
     margin: 0.1rem 3px;
     text-transform: uppercase;
     padding: 4px 3px 0;
-    line-height: .4em;
+    line-height: 0.4em;
+  }
+
+  .experience-columns .column:first-child {
+    padding-right: 0.7rem !important;
+  }
+
+  #skills > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #skills ul li {
+    line-height: 0.3em;
+  }
+
+  .column {
+    width: 47%;
   }
 
   @page {
     margin: 0;
-    size: 8.2in 11in
+    size: 8.2in 11in;
   }
 
   body {
     max-height: 11in;
     overflow: hidden;
-    background: #006
+    background: #006;
   }
 
   .content-page .r3 {
@@ -236,13 +254,16 @@
   .resume {
     overflow: hidden;
   }
-
+  .resume .r1 {
+    align-items: stretch;
+  }
   .resume .c3 {
     padding: 0;
     margin: 3% 2.3%;
     border: 4px #ddd solid;
     border-radius: 0 3.6rem 0 0;
     width: 8in;
+    height: 10.5in;
   }
 
   .Resume {
@@ -265,20 +286,20 @@
   }
 
   #links ul {
-    margin: .7rem .5rem .5rem;
+    margin: 0.7rem 0.5rem 0.5rem;
   }
 
   #links ul li {
     margin: 0;
-    padding: .2rem 0;
+    padding: 0.2rem 0;
   }
 
   #skills h2 {
-    margin: .4rem;
-    margin-bottom: .1rem;
+    margin: 0.4rem;
+    margin-bottom: 0.1rem;
   }
   #skills ul {
-    margin: .9rem;
+    margin: 0.9rem;
   }
 
   .experience-header {
@@ -286,7 +307,6 @@
   }
 
   .highlights {
-    margin: .4rem 0 0 0;
+    margin: 0.4rem 0 0 0;
   }
-
 }
