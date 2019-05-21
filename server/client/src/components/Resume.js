@@ -282,7 +282,7 @@ export default props => {
                 </li>
               </ul>
             </div>
-            <div className="experience">
+            <div className="experience print-hide">
               <h3>
                 <span className="company">
                   New York State Society of CPAs --{' '}

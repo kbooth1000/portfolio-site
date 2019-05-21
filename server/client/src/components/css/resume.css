@@ -208,7 +208,8 @@
   .content-dispenser,
   .footer,
   .back-button,
-  .resume-print-button {
+  .resume-print-button,
+  .print-hide {
     display: none;
   }
 
