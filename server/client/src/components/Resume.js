@@ -191,7 +191,13 @@ export default props => {
         </div>
 
         
-            <div className="experience">
+           
+            
+          </div>
+          <div className="column">
+
+
+          <div className="experience">
               <h3>
                 <span className="job-title">
                   Freelance Web Designer/Front-End Developer
@@ -214,11 +220,6 @@ export default props => {
                 </li>
               </ul>
             </div>
-            
-          </div>
-          <div className="column">
-
-
 
           <div className="experience">
               <h3>
