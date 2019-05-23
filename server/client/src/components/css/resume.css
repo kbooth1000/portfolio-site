@@ -239,18 +239,18 @@
 
   @page {
     margin: 0;
-    size: 8.2in 11in;
+    size: 8.2in 10in;
   }
 
   body {
-    max-height: 11in;
+    max-height: 10in;
     overflow: hidden;
-    background: #006;
   }
 
   .content-page .r3 {
     -ms-flex: 1 1;
     flex: 1 1;
+    max-height: 10in;
   }
   .resume {
     overflow: hidden;
@@ -261,10 +261,11 @@
   .resume .c3 {
     padding: 0;
     margin: 3% 2.3%;
-    border: 4px #ddd solid;
+    border: 3px #ddd solid;
     border-radius: 0 3.6rem 0 0;
     width: 8in;
-    height: 10.5in;
+    height: 10in;
+    overflow: hidden;
   }
 
   .Resume {
