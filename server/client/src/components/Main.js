@@ -98,7 +98,7 @@ class Main extends Component {
               </div>
             </div>
           </div>
-          <div className="row r4 footer">Copyright &copy; 2018</div>
+          <div className="row r4 footer">Copyright &copy; {Date.getFullYear()}</div>
         </div>
       </div>
     );
