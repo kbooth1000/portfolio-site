@@ -81,6 +81,29 @@ export default props => {
 
 <section className="experience-columns">
           <div className="column">
+    
+    
+    
+    
+    <div className="experience">
+              <h3>
+                <span className="company">Children&#39;s Healthcare of Atlanta</span>
+                <span className="location"> -- Atlanta, GA</span>
+              </h3>
+              <h3 className="job-title">Front-End Web Developer</h3>
+              <ul className="skills-used">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>Blackbaud Luminate</li>
+              </ul>
+              <p className="dates">August 2019-present</p>
+
+              <ul className="highlights">
+                <li>
+                  Create websites, donation forms, surveys, event registration pages, etc. for the healthcare system&#39;s fundraising efforts.
+                </li>
+              </ul>
+            </div>
 
 
 
@@ -98,7 +121,7 @@ export default props => {
                 <li>PHP</li>
                 <li>Wordpress</li>
               </ul>
-              <p className="dates">March 2019-present</p>
+              <p className="dates">March 2019-June 2019</p>
 
               <ul className="highlights">
                 <li>
