@@ -158,8 +158,8 @@ export default props => {
           <ul className="highlights">
             <li>
               Learned Full-Stack JavaScript, including React/ Redux, Node.js,
-              Express, HTML/CSS, PostgreSQL • Projects include:
-              <ul>
+              Express, HTML/CSS, PostgreSQL • <span className="print-hide"> Projects include:</span>
+              <ul class="print-hide">
                 <li>
                   Digicaching: A virtual geocaching app that lets users collect,
                   combine, and cache digital treasures to complete collections (
@@ -219,7 +219,6 @@ export default props => {
           </div>
           <div className="column">
 
-
           <div className="experience">
               <h3>
                 <span className="job-title">
@@ -234,7 +233,7 @@ export default props => {
                   <li>Illustrator</li>
                 </ul>
               </h3>
-              <p className="dates">2013-present</p>
+              <p className="dates">2013-2019</p>
               <ul className="highlights">
                 <li>
                   Design and build custom websites, mostly on WordPress (see

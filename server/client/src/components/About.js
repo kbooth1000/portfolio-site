@@ -44,9 +44,8 @@ let About = props => {
         <br /> et al skills.
       </p>
       <p>
-        Now, as I continue to dig deeper into these awesome technologies, I'm
-        looking for a company to work with where I can help them build great
-        stuff!
+        Now, as I continue to dig deeper into these awesome technologies, I'm 
+        looking for <strike style={{color:'#999'}}>a company to work with where</strike> opportunities outside of my full-time job (Web Dev, Children's Healthcare of Atlanta Foundation) to code and help build great stuff!
       </p>
       <p>
         When I'm not coding, I love exploring the city and being out around

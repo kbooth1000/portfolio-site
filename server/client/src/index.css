@@ -550,6 +550,6 @@ a {
 @media print {
   body {
     line-height: 1.1rem;
-    font-size: 15px;
+    font-size: 14px;
   }
 }
